@@ -1,0 +1,515 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{asness2013value}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=86cd175b8cf737656d96811ee5b17629}{%
+           family={Asness},
+           familyi={A\bibinitperiod},
+           given={Clifford\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5ea389c5c00164cdcb5d8e3ba0cb909}{%
+           family={Moskowitz},
+           familyi={M\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07123ce41f03a63251aed38e35aa6029}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Lasse\bibnamedelima Heje},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{cc6a33049539c0fef444008ee0df68ad}
+      \strng{fullhash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{bibnamehash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{authorbibnamehash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{authornamehash}{cc6a33049539c0fef444008ee0df68ad}
+      \strng{authorfullhash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{3}
+      \field{title}{Value and momentum everywhere}
+      \field{volume}{68}
+      \field{year}{2013}
+      \field{pages}{929\bibrangedash 985}
+      \range{pages}{57}
+    \endentry
+    \entry{bakshi2019understanding}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb38fb3a9173632501699c1b432eefc4}{%
+           family={Bakshi},
+           familyi={B\bibinitperiod},
+           given={Gurdip},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=599dbcbeaed076751e209b2f1d533d0f}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54f748664daa08cf1d8b5ed663d038e7}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Alberto\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{b108787cb2ee604c0e02ceecb974da27}
+      \strng{fullhash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{bibnamehash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{authorbibnamehash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{authornamehash}{b108787cb2ee604c0e02ceecb974da27}
+      \strng{authorfullhash}{85a330a2388bbfd1f791f9132ae39d54}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{2}
+      \field{title}{Understanding the sources of risk underlying the cross section of commodity returns}
+      \field{volume}{65}
+      \field{year}{2019}
+      \field{pages}{619\bibrangedash 641}
+      \range{pages}{23}
+    \endentry
+    \entry{boons2019basis}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fa43370579d7f1a287a7f6edc414b701}{%
+           family={Boons},
+           familyi={B\bibinitperiod},
+           given={Martijn},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33d3a5237f2e85e5e22f223471ccb952}{%
+           family={Prado},
+           familyi={P\bibinitperiod},
+           given={Melissa\bibnamedelima Porras},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{fullhash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{bibnamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authorbibnamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authornamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authorfullhash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{1}
+      \field{title}{Basis-momentum}
+      \field{volume}{74}
+      \field{year}{2019}
+      \field{pages}{239\bibrangedash 279}
+      \range{pages}{41}
+    \endentry
+    \entry{brooks2017half}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d9a9859ac505a11b9bd50bd63bb16b35}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {August}%
+      }
+      \strng{namehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{fullhash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{bibnamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authorbibnamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authornamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authorfullhash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{White paper, AQR}
+      \field{title}{A half century of macro momentum}
+      \field{year}{2017}
+    \endentry
+    \entry{chan1996momentum}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0f82c6af99eb261cf7ccc0f14e4eb428}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Louis\bibnamedelima KC},
+           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425b7ee57b586395fc3a1bec6511c1c8}{%
+           family={Jegadeesh},
+           familyi={J\bibinitperiod},
+           given={Narasimhan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7067481189aa7a7f3a9cff920faef611}{%
+           family={Lakonishok},
+           familyi={L\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{4acc55e79722c3b2be2875da217014ce}
+      \strng{fullhash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{bibnamehash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{authorbibnamehash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{authornamehash}{4acc55e79722c3b2be2875da217014ce}
+      \strng{authorfullhash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{5}
+      \field{title}{Momentum strategies}
+      \field{volume}{51}
+      \field{year}{1996}
+      \field{pages}{1681\bibrangedash 1713}
+      \range{pages}{33}
+    \endentry
+    \entry{NBERw20984}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6d86d3b60755ca6b922c7accd1996888}{%
+           family={Novy-Marx},
+           familyi={N\bibinithyphendelim M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{fullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{bibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorbibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authornamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorfullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{20984}
+      \field{series}{Working Paper Series}
+      \field{title}{Fundamentally, Momentum is Fundamental Momentum}
+      \field{type}{Working Paper}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3386/w20984
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w20984
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w20984
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{asness2013value}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=86cd175b8cf737656d96811ee5b17629}{%
+           family={Asness},
+           familyi={A\bibinitperiod},
+           given={Clifford\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5ea389c5c00164cdcb5d8e3ba0cb909}{%
+           family={Moskowitz},
+           familyi={M\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07123ce41f03a63251aed38e35aa6029}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Lasse\bibnamedelima Heje},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{cc6a33049539c0fef444008ee0df68ad}
+      \strng{fullhash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{bibnamehash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{authorbibnamehash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \strng{authornamehash}{cc6a33049539c0fef444008ee0df68ad}
+      \strng{authorfullhash}{ce31abe9482bdbe40dfda71635b0afa0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{3}
+      \field{title}{Value and momentum everywhere}
+      \field{volume}{68}
+      \field{year}{2013}
+      \field{pages}{929\bibrangedash 985}
+      \range{pages}{57}
+    \endentry
+    \entry{bakshi2019understanding}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb38fb3a9173632501699c1b432eefc4}{%
+           family={Bakshi},
+           familyi={B\bibinitperiod},
+           given={Gurdip},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=599dbcbeaed076751e209b2f1d533d0f}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54f748664daa08cf1d8b5ed663d038e7}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Alberto\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{b108787cb2ee604c0e02ceecb974da27}
+      \strng{fullhash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{bibnamehash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{authorbibnamehash}{85a330a2388bbfd1f791f9132ae39d54}
+      \strng{authornamehash}{b108787cb2ee604c0e02ceecb974da27}
+      \strng{authorfullhash}{85a330a2388bbfd1f791f9132ae39d54}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{2}
+      \field{title}{Understanding the sources of risk underlying the cross section of commodity returns}
+      \field{volume}{65}
+      \field{year}{2019}
+      \field{pages}{619\bibrangedash 641}
+      \range{pages}{23}
+    \endentry
+    \entry{boons2019basis}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fa43370579d7f1a287a7f6edc414b701}{%
+           family={Boons},
+           familyi={B\bibinitperiod},
+           given={Martijn},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33d3a5237f2e85e5e22f223471ccb952}{%
+           family={Prado},
+           familyi={P\bibinitperiod},
+           given={Melissa\bibnamedelima Porras},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{fullhash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{bibnamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authorbibnamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authornamehash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \strng{authorfullhash}{c0f5c042977841a9a7d201e04bcbd68f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{1}
+      \field{title}{Basis-momentum}
+      \field{volume}{74}
+      \field{year}{2019}
+      \field{pages}{239\bibrangedash 279}
+      \range{pages}{41}
+    \endentry
+    \entry{brooks2017half}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d9a9859ac505a11b9bd50bd63bb16b35}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {August}%
+      }
+      \strng{namehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{fullhash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{bibnamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authorbibnamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authornamehash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \strng{authorfullhash}{d9a9859ac505a11b9bd50bd63bb16b35}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{White paper, AQR}
+      \field{title}{A half century of macro momentum}
+      \field{year}{2017}
+    \endentry
+    \entry{chan1996momentum}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0f82c6af99eb261cf7ccc0f14e4eb428}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Louis\bibnamedelima KC},
+           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=425b7ee57b586395fc3a1bec6511c1c8}{%
+           family={Jegadeesh},
+           familyi={J\bibinitperiod},
+           given={Narasimhan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7067481189aa7a7f3a9cff920faef611}{%
+           family={Lakonishok},
+           familyi={L\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{4acc55e79722c3b2be2875da217014ce}
+      \strng{fullhash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{bibnamehash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{authorbibnamehash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \strng{authornamehash}{4acc55e79722c3b2be2875da217014ce}
+      \strng{authorfullhash}{bb0e3ae27676cbf03c0a735da434fb6e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{5}
+      \field{title}{Momentum strategies}
+      \field{volume}{51}
+      \field{year}{1996}
+      \field{pages}{1681\bibrangedash 1713}
+      \range{pages}{33}
+    \endentry
+    \entry{NBERw20984}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6d86d3b60755ca6b922c7accd1996888}{%
+           family={Novy-Marx},
+           familyi={N\bibinithyphendelim M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{fullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{bibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorbibnamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authornamehash}{6d86d3b60755ca6b922c7accd1996888}
+      \strng{authorfullhash}{6d86d3b60755ca6b922c7accd1996888}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{20984}
+      \field{series}{Working Paper Series}
+      \field{title}{Fundamentally, Momentum is Fundamental Momentum}
+      \field{type}{Working Paper}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3386/w20984
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w20984
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w20984
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
