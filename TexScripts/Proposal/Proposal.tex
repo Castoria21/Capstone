@@ -1,26 +1,67 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx}  
 \usepackage{amsmath}   
 \usepackage{amssymb}   
-\usepackage{listings}  
-\usepackage{hyperref}  
+\usepackage{listings} 
 \usepackage{geometry}
 \geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
 \usepackage{framed}
 \usepackage{color}
 \usepackage{setspace}
-\newenvironment{proof}{{\noindent \it \textbf{Proof: }}}{\hfill $\blacksquare$\par}
-\newenvironment{solution}{{\noindent \it \textbf{Solution: }}}{}
+\usepackage[backend=biber, style=apa]{biblatex}
+\setlength\bibitemsep{1\baselineskip}
+\usepackage[hidelinks,
+			colorlinks,
+			linkcolor=blue,
+			anchorcolor=blue,
+			urlcolor=blue,
+			citecolor=blue]{hyperref}
+\addbibresource{../Reference/reference.bib}
+\DeclareCiteCommand{\cite}
+  {\usebibmacro{prenote}}
+  {\textcolor{blue}{\printnames{labelname},}
+   %\setunit{,}
+   \textcolor{blue}{\printfield{year}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\textcite}
+  {\usebibmacro{prenote}}
+  {\textcolor{blue}{\printnames{labelname}}
+   %\setunit{}
+   \textcolor{blue}{(\printfield{year})}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
 
 
-\title{\textbf{Fundamental Momentum Based Stock Investing}}
+\title{\textbf{Fundamental Momentum Based \\ Stock Investing}}
 \author{
-	 Sicheng Wang\\
-	 Taoying Zhao \\
-	 Pengcheng Zhou 
+	 Sicheng Wang, Taoying Zhao, Pengcheng Zhou \\
+	 (Advisor: Rob Reider, Method Investments \& Advisory Ltd)
 	}
 
 \begin{document}
 	\maketitle
+
+	Momentum has long been regarded as one of the most important financial anomalies across different asset classes, with significant implications for both academic research and investment strategies.
+	Previous studies have been focused on explaining the profitability of momentum strategies (e.g., \cite{chan1996momentum}),
+	 exploring the effectiveness of momentum strategy across diverse asset classes and the relationship between momentum and value strategies (see \cite{asness2013value}), 
+	 and constructing momentum factor to describe the cross-sectional variation of commodity returns (\cite{bakshi2019understanding}).
+	 The construction of traditional momentum is based on asset prices, while recent researches also highlight the importance of the momentum in asset characteristics and economic indicators.
+	 For instance, \textcite{boons2019basis} proposes the basis-momentum factor that effectively predicts commodity premiums in both the time
+	  series and cross section. Moreover, \textcite{brooks2017half} demonstrates the consistent performance of macro momentum strategies over a half-century.
 	
+	More importantly, \textcite{NBERw20984} argues that the fundamental momentum (momentum in firm fundamentals) explains the performance of strategies based on 
+	price momentum. This finding not only provides strong evidence for identifying the driving factor of the profitability of price momentum strategies, 
+	but also opens new avenues for developing investment strategies that integrate price momentum with fundamental momentum.
+
+	Recently, the quantitative hedge fund AQR also describes how they are now incorporating fundamental momentum to complement price momentum in their trading strategies (see \cite{brooks2024economic}).
+	Following this promising direction, we first aim to produce new fundamental momentum strategies based on various firm characteristics (we plan to use WRDS to access the relevant data). 
+	Then, we will employ traditional asset pricing techniques, including Fama-MacBeth regression and spanning test,
+	 to validate the effectiveness of our strategies. Furthermore, we plan to combine the traditional price momentum strategy with the new fundamental momentum strategy to produce conditional strategy to seek performance enhancement.
+	  Finally, we will conduct robustness tests to assess the consistency of our new strategy in different market regimes, particularly during drawdown periods.
+
+
+	\newpage
+	\printbibliography
 \end{document}
