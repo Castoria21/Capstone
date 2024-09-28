@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber Proposal"] 1727301817.98765 "Proposal.bcf" "Proposal.bbl" "Proposal" 1727303954.64223 0
-  "../Reference/reference.bib" 1727299004 1700 adc7ae1e8b1d3f4e0811b76ca703b157 ""
-  "Proposal.bcf" 1727303954 133374 e5dcab041454e056092e3fe88c3ce568 "pdflatex"
+["biber Proposal"] 1727562634.90642 "Proposal.bcf" "Proposal.bbl" "Proposal" 1727562828.81356 0
+  "../Reference/reference.bib" 1727562550 1896 7870ad67662ef3c78fab53287d4182e6 ""
+  "Proposal.bcf" 1727562828 133382 38d687e21c9d4125a1adc4f87477c412 "pdflatex"
   (generated)
   "Proposal.bbl"
   "Proposal.blg"
   (rewritten before read)
-["pdflatex"] 1727303953.53649 "c:/Users/Admin/Documents/GitHub/Capstone/TexScripts/Proposal/Proposal.tex" "Proposal.pdf" "Proposal" 1727303954.64273 0
-  "Proposal.aux" 1727303954 1836 0ca1cfffd9c11562515e4d8b46783e9f "pdflatex"
-  "Proposal.bbl" 1727301819 20225 111b8db68d8c4685b5992f282b6de9bf "biber Proposal"
-  "Proposal.out" 1727303954 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Proposal.run.xml" 1727303954 2467 f5764ca0a730798c254e377d13fd04db "pdflatex"
-  "Proposal.tex" 1727303952 3482 11fbdb11ed5d4a3d1ffdf0c95b4c756b ""
-  "c:/Users/Admin/Documents/GitHub/Capstone/TexScripts/Proposal/Proposal.tex" 1727303952 3482 11fbdb11ed5d4a3d1ffdf0c95b4c756b ""
+["pdflatex"] 1727562827.65766 "c:/Users/Admin/Documents/GitHub/Capstone/TexScripts/Proposal/Proposal.tex" "Proposal.pdf" "Proposal" 1727562828.8141 0
+  "Proposal.aux" 1727562828 1950 26e781ba7100015b7bcc52ebf32a562b "pdflatex"
+  "Proposal.bbl" 1727562636 23879 939593dd80cfc11ded52f7f0adc33d58 "biber Proposal"
+  "Proposal.out" 1727562828 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Proposal.run.xml" 1727562828 2467 f5764ca0a730798c254e377d13fd04db "pdflatex"
+  "Proposal.tex" 1727562826 3686 875925950a5f1bdd093b9d54dda3dfe1 ""
+  "c:/Users/Admin/Documents/GitHub/Capstone/TexScripts/Proposal/Proposal.tex" 1727562826 3686 875925950a5f1bdd093b9d54dda3dfe1 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1705858877 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1705856594 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1705856594 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""

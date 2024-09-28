@@ -177,6 +177,50 @@
       \field{title}{A half century of macro momentum}
       \field{year}{2017}
     \endentry
+    \entry{brooks2024economic}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d9a9859ac505a11b9bd50bd63bb16b35}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3facf81f472c942654fe9ec76bea607e}{%
+           family={Feilbogen},
+           familyi={F\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0e2e756eae71415b0b1b8e164377234}{%
+           family={Ooi},
+           familyi={O\bibinitperiod},
+           given={Yao\bibnamedelima Hua},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09ce99f1e4bb013c07cd0c493777206f}{%
+           family={Akant},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{625b31068f7656137afdedb12e6f677f}
+      \strng{fullhash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{bibnamehash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{authorbibnamehash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{authornamehash}{625b31068f7656137afdedb12e6f677f}
+      \strng{authorfullhash}{31f0e41d78402fbb08019b097cca354f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 4710868}
+      \field{title}{Economic trend}
+      \field{year}{2024}
+    \endentry
     \entry{chan1996momentum}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=0f82c6af99eb261cf7ccc0f14e4eb428}{%
@@ -422,6 +466,50 @@
       \field{journaltitle}{White paper, AQR}
       \field{title}{A half century of macro momentum}
       \field{year}{2017}
+    \endentry
+    \entry{brooks2024economic}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d9a9859ac505a11b9bd50bd63bb16b35}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3facf81f472c942654fe9ec76bea607e}{%
+           family={Feilbogen},
+           familyi={F\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0e2e756eae71415b0b1b8e164377234}{%
+           family={Ooi},
+           familyi={O\bibinitperiod},
+           given={Yao\bibnamedelima Hua},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09ce99f1e4bb013c07cd0c493777206f}{%
+           family={Akant},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{625b31068f7656137afdedb12e6f677f}
+      \strng{fullhash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{bibnamehash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{authorbibnamehash}{31f0e41d78402fbb08019b097cca354f}
+      \strng{authornamehash}{625b31068f7656137afdedb12e6f677f}
+      \strng{authorfullhash}{31f0e41d78402fbb08019b097cca354f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 4710868}
+      \field{title}{Economic trend}
+      \field{year}{2024}
     \endentry
     \entry{chan1996momentum}{article}{}
       \name{author}{3}{}{%
