@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 from utils import create_empty_df, create_ew_df
-
+from visualization import plot_group_cum, plot_solo_cum
 
 def get_sorted_index(df, quantiles=np.linspace(.1, 1, 9, endpoint=False)) -> list[pd.DataFrame]:
     groups = quantiles.shape[0] + 1
@@ -25,9 +25,13 @@ def get_sorted_portfolio(df_ret, df_idx_l, cost=0.0005, weights=None):
     if weights == None:
         weights = [create_ew_df(df) for df in df_idx_l]
     groups = len(df_idx_l)
-    return pd.concat(
+    portfolio = pd.concat(
         [
             (df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) for i in range(groups)
         ], axis=1
     )
+    ls_portfolio = portfolio.iloc[:, -1] - portfolio.iloc[:, 0]
+    plot_group_cum(portfolio)
+    plot_solo_cum(ls_portfolio)
+    return portfolio
     
