@@ -21,7 +21,7 @@ def get_sorted_index(df, quantiles=np.linspace(.1, 1, 9, endpoint=False)) -> lis
     return df_idx_l
 
 
-def get_sorted_portfolio(df_ret, df_idx_l, cost=0.0005, weights=None):
+def get_sorted_portfolio(df_ret, df_idx_l, cost=0.0005, weights=None, high_minus_low=True):
     if weights == None:
         weights = [create_ew_df(df) for df in df_idx_l]
     groups = len(df_idx_l)
@@ -31,6 +31,8 @@ def get_sorted_portfolio(df_ret, df_idx_l, cost=0.0005, weights=None):
         ], axis=1
     )
     ls_portfolio = portfolio.iloc[:, -1] - portfolio.iloc[:, 0]
+    if not high_minus_low:
+        ls_portfolio = -ls_portfolio
     plot_group_cum(portfolio)
     plot_solo_cum(ls_portfolio)
     return portfolio

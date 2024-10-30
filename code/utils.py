@@ -37,8 +37,18 @@ def get_time_merge(df_feature, df_ret):
     return aligned_df
 
 
-def get_formatted_feature(df_comp, df_ret, feature_name, ffill_limit=12, scale_window=None):
-    temp = df_comp.groupby("cusip").apply(lambda x: cusip_val_pct(x, feature_name, scale_window)).drop_duplicates(subset=['date', 'cusip'], keep=False)
-    temp =  date_cusip_pivot(temp, f'{feature_name}_pct').reindex(columns=df_ret.columns)
+def get_formatted_feature(df, df_ret, feature_name, ffill_limit=12, scale_window=None):
+    temp =  date_cusip_pivot(df, feature_name).reindex(columns=df_ret.columns)
     temp = get_time_merge(temp, df_ret).ffill(limit=ffill_limit)
+    return temp
+
+
+def get_non_duplicated_df(df, val: str):
+    """
+    Get rid of duplicated rows with identical date and cusip and empty vals
+    """
+    temp = df.copy(deep=True)
+    temp = temp[~((temp.duplicated(subset=['date', 'cusip'], keep=False)) & (df[val].isna()))]
+    # If there're still duplicates, it could be caused by different "consol".
+    temp = temp[~((temp.duplicated(subset=['date', 'cusip'], keep=False)) & (df.consol == "C"))]
     return temp
