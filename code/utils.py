@@ -37,7 +37,7 @@ def get_time_merge(df_feature, df_ret):
     return aligned_df
 
 
-def get_formatted_feature(df, df_ret, feature_name, ffill_limit=12, scale_window=None):
+def get_formatted_feature(df, df_ret, feature_name, ffill_limit, scale_window=None):
     temp =  date_cusip_pivot(df, feature_name).reindex(columns=df_ret.columns)
     temp = get_time_merge(temp, df_ret).ffill(limit=ffill_limit)
     return temp
@@ -52,3 +52,17 @@ def get_non_duplicated_df(df, val: str):
     # If there're still duplicates, it could be caused by different "consol".
     temp = temp[~((temp.duplicated(subset=['date', 'cusip'], keep=False)) & (df.consol == "C"))]
     return temp
+
+
+def get_volume_threshold(df_vol, threshold=0.7, window=12):
+    df_vol_ma = df_vol.rolling(window=window).mean()
+    vol_q = np.nanquantile(df_vol, threshold, axis=1).reshape(-1, 1)
+    df_vol_idx = create_empty_df(df_vol)
+    df_vol_idx[df_vol_ma >= vol_q] = 1
+    return df_vol_idx
+
+
+def get_certain_month_idx(df, month=6):
+    temp = df.copy(deep=True)
+    temp.index = pd.to_datetime(temp.index)
+    return temp.index.month == month
