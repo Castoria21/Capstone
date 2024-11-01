@@ -19,7 +19,7 @@ def get_sorted_index(df, holding_period=12, quantiles=np.linspace(.1, 1, 9, endp
         else:
             idx_temp[(df <= threshold[:, i:i+1]) & (df >= threshold[:, i-1:i])] = 1
         if holding_period > 1:
-            df_idx_l.append(idx_temp.ffill(limit=holding_period))
+            df_idx_l.append(idx_temp.ffill(limit=holding_period-1))
         else:
             df_idx_l.append(idx_temp)
     return df_idx_l
@@ -34,6 +34,5 @@ def get_sorted_portfolio(df_ret, df_idx_l, cost=0.0005, weights=None):
             (df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) for i in range(groups)
         ], axis=1
     )
-    plot_group_cum(portfolio)
     return portfolio
     

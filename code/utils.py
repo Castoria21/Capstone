@@ -1,5 +1,10 @@
+from datetime import datetime
 import numpy as np
 import pandas as pd
+
+
+def filter_datetime_df(df, start, end):
+    return df[(df.index <= datetime(*end)) & (df.index >= datetime(*start))]
 
 
 def create_empty_df(df):
@@ -10,9 +15,8 @@ def create_ew_df(df):
     return df / df.sum(axis=1).to_numpy().reshape(-1, 1)
 
 
-def date_cusip_pivot(df, val):
+def date_cusip_pivot(df, val, index_conversion=True):
     temp = df.pivot(index='date', columns='cusip', values=val)
-    temp.index = pd.to_datetime(temp.index)
     return temp.sort_index()
 
 
@@ -63,6 +67,8 @@ def get_volume_threshold(df_vol, threshold=0.7, window=12):
 
 
 def get_certain_month_idx(df, month=6):
-    temp = df.copy(deep=True)
-    temp.index = pd.to_datetime(temp.index)
-    return temp.index.month == month
+    return df.index.str.endswith(f"{month:0>2}")
+
+
+def count_non_cols(df, axis=1):
+    return df.apply(lambda x: df.shape[axis] - x.isna().sum(), axis=1)

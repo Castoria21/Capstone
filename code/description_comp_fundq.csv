@@ -1,0 +1,648 @@
+,name,nullable,type,comment
+0,gvkey,True,VARCHAR(6),Global Company Key
+1,datadate,True,DATE,Data Date
+2,fyearq,True,INTEGER,Fiscal Year
+3,fqtr,True,SMALLINT,Fiscal Quarter
+4,fyr,True,SMALLINT,Fiscal Year-end Month
+5,indfmt,True,VARCHAR(12),Industry Format
+6,consol,True,VARCHAR(2),Level of Consolidation - Company Interim Descriptor
+7,popsrc,True,VARCHAR(1),Population Source
+8,datafmt,True,VARCHAR(12),Data Format
+9,tic,True,VARCHAR(8),Ticker Symbol
+10,cusip,True,VARCHAR(20),CUSIP
+11,conm,True,VARCHAR(70),Company Name
+12,acctchgq,True,VARCHAR(8),Adoption of Accounting Changes
+13,acctstdq,True,VARCHAR(8),Accounting Standard
+14,adrrq,True,"NUMERIC(18, 4)",ADR Ratio
+15,ajexq,True,"NUMERIC(24, 12)",Adjustment Factor (Company) - Cumulative by Ex-Date
+16,ajpq,True,"NUMERIC(24, 12)",Adjustment Factor (Company) - Cumulative byPay-Date
+17,bsprq,True,VARCHAR(8),Balance Sheet Presentation
+18,compstq,True,VARCHAR(8),Comparability Status
+19,curcdq,True,VARCHAR(3),ISO Currency Code
+20,curncdq,True,VARCHAR(3),Native Currency Code
+21,currtrq,True,"NUMERIC(24, 12)",Currency Translation Rate
+22,curuscnq,True,"NUMERIC(18, 4)",US Canadian Translation Rate - Interim
+23,datacqtr,True,VARCHAR(6),Calendar Data Year and Quarter
+24,datafqtr,True,VARCHAR(6),Fiscal Data Year and Quarter
+25,finalq,True,VARCHAR(2),Final Indicator Flag
+26,ogmq,True,VARCHAR(8),OIL & GAS METHOD
+27,rp,True,VARCHAR(2),Reporting Periodicity
+28,scfq,True,INTEGER,Cash Flow Model
+29,srcq,True,INTEGER,Source Code
+30,staltq,True,VARCHAR(2),Status Alert
+31,updq,True,INTEGER,Update Code
+32,apdedateq,True,DATE,Actual Period End date
+33,fdateq,True,DATE,Final Date
+34,pdateq,True,DATE,Preliminary Date
+35,rdq,True,DATE,Report Date of Quarterly Earnings
+36,acchgq,True,"NUMERIC(18, 4)",Accounting Changes - Cumulative Effect
+37,acomincq,True,"NUMERIC(18, 4)",Accumulated Other Comprehensive Income (Loss)
+38,acoq,True,"NUMERIC(18, 4)",Current Assets - Other - Total
+39,actq,True,"NUMERIC(18, 4)",Current Assets - Total
+40,altoq,True,"NUMERIC(18, 4)",Other Long-term Assets
+41,ancq,True,"NUMERIC(18, 4)",Non-Current Assets - Total
+42,anoq,True,"NUMERIC(18, 4)",Assets Netting & Other Adjustments
+43,aociderglq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Derivatives Unrealized Gain/Loss
+44,aociotherq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Other Adjustments
+45,aocipenq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Min Pension Liab Adj
+46,aocisecglq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Unreal G/L Ret Int in Sec Assets
+47,aol2q,True,"NUMERIC(18, 4)",Assets Level2 (Observable)
+48,aoq,True,"NUMERIC(18, 4)",Assets - Other - Total
+49,apq,True,"NUMERIC(18, 4)",Account Payable/Creditors - Trade
+50,aqaq,True,"NUMERIC(18, 4)",Acquisition/Merger After-Tax
+51,aqdq,True,"NUMERIC(18, 4)",Acquisition/Merger Diluted EPS Effect
+52,aqepsq,True,"NUMERIC(18, 4)",Acquisition/Merger Basic EPS Effect
+53,aqpl1q,True,"NUMERIC(18, 4)",Assets Level1 (Quoted Prices)
+54,aqpq,True,"NUMERIC(18, 4)",Acquisition/Merger Pretax
+55,arcedq,True,"NUMERIC(18, 4)",As Reported Core - Diluted EPS Effect
+56,arceepsq,True,"NUMERIC(18, 4)",As Reported Core - Basic EPS Effect
+57,arceq,True,"NUMERIC(18, 4)",As Reported Core - After-tax
+58,atq,True,"NUMERIC(18, 4)",Assets - Total
+59,aul3q,True,"NUMERIC(18, 4)",Assets Level3 (Unobservable)
+60,billexceq,True,"NUMERIC(19, 4)",Billings in Excess of Cost & Earnings
+61,capr1q,True,"NUMERIC(18, 4)",Risk-Adjusted Capital Ratio - Tier 1
+62,capr2q,True,"NUMERIC(18, 4)",Risk-Adjusted Capital Ratio - Tier 2
+63,capr3q,True,"NUMERIC(18, 4)",Risk-Adjusted Capital Ratio - Combined
+64,capsftq,True,"NUMERIC(19, 4)",Capitalized Software
+65,capsq,True,"NUMERIC(18, 4)",Capital Surplus/Share Premium Reserve
+66,ceiexbillq,True,"NUMERIC(19, 4)",Cost & Earnings in Excess of Billings
+67,ceqq,True,"NUMERIC(18, 4)",Common/Ordinary Equity - Total
+68,cheq,True,"NUMERIC(18, 4)",Cash and Short-Term Investments
+69,chq,True,"NUMERIC(18, 4)",Cash
+70,cibegniq,True,"NUMERIC(18, 4)",Comp Inc - Beginning Net Income
+71,cicurrq,True,"NUMERIC(18, 4)",Comp Inc - Currency Trans Adj
+72,ciderglq,True,"NUMERIC(18, 4)",Comp Inc - Derivative Gains/Losses
+73,cimiiq,True,"NUMERIC(18, 4)",Comprehensive Income - Noncontrolling Interest
+74,ciotherq,True,"NUMERIC(18, 4)",Comp Inc - Other Adj
+75,cipenq,True,"NUMERIC(18, 4)",Comp Inc - Minimum Pension Adj
+76,ciq,True,"NUMERIC(18, 4)",Comprehensive Income - Total
+77,cisecglq,True,"NUMERIC(18, 4)",Comp Inc - Securities Gains/Losses
+78,citotalq,True,"NUMERIC(18, 4)",Comprehensive Income - Parent
+79,cogsq,True,"NUMERIC(18, 4)",Cost of Goods Sold
+80,csh12q,True,"NUMERIC(18, 4)",Common Shares Used to Calculate Earnings Per Share - 12 Months Moving
+81,cshfd12,True,"NUMERIC(19, 4)",Common Shares Used to Calc Earnings Per Share - Fully Diluted - 12 Months Moving
+82,cshfdq,True,"NUMERIC(18, 4)",Com Shares for Diluted EPS
+83,cshiq,True,"NUMERIC(18, 4)",Common Shares Issued
+84,cshopq,True,"NUMERIC(18, 4)",Total Shares Repurchased - Quarter
+85,cshoq,True,"NUMERIC(18, 4)",Common Shares Outstanding
+86,cshprq,True,"NUMERIC(18, 4)",Common Shares Used to Calculate Earnings Per Share - Basic
+87,cstkcvq,True,"NUMERIC(18, 4)",Carrying Value
+88,cstkeq,True,"NUMERIC(18, 4)",Common Stock Equivalents - Dollar Savings
+89,cstkq,True,"NUMERIC(18, 4)",Common/Ordinary Stock (Capital)
+90,dcomq,True,"NUMERIC(18, 4)",Deferred Compensation
+91,dd1q,True,"NUMERIC(18, 4)",Long-Term Debt Due in One Year
+92,deracq,True,"NUMERIC(19, 4)",Derivative Assets - Current
+93,deraltq,True,"NUMERIC(19, 4)",Derivative Assets Long-Term
+94,derhedglq,True,"NUMERIC(19, 4)",Gains/Losses on Derivatives and Hedging
+95,derlcq,True,"NUMERIC(19, 4)",Derivative Liabilities- Current
+96,derlltq,True,"NUMERIC(19, 4)",Derivative Liabilities Long-Term
+97,diladq,True,"NUMERIC(18, 4)",Dilution Adjustment
+98,dilavq,True,"NUMERIC(18, 4)",Dilution Available - Excluding Extraordinary Items
+99,dlcq,True,"NUMERIC(18, 4)",Debt in Current Liabilities
+100,dlttq,True,"NUMERIC(18, 4)",Long-Term Debt - Total
+101,doq,True,"NUMERIC(18, 4)",Discontinued Operations
+102,dpacreq,True,"NUMERIC(18, 4)",Accumulated Depreciation of RE Property
+103,dpactq,True,"NUMERIC(18, 4)","Depreciation, Depletion and Amortization (Accumulated)"
+104,dpq,True,"NUMERIC(18, 4)",Depreciation and Amortization - Total
+105,dpretq,True,"NUMERIC(18, 4)",Depr/Amort of Property
+106,drcq,True,"NUMERIC(18, 4)",Deferred Revenue - Current
+107,drltq,True,"NUMERIC(18, 4)",Deferred Revenue - Long-term
+108,dteaq,True,"NUMERIC(18, 4)",Extinguishment of Debt After-tax
+109,dtedq,True,"NUMERIC(18, 4)",Extinguishment of Debt Diluted EPS Effect
+110,dteepsq,True,"NUMERIC(18, 4)",Extinguishment of Debt Basic EPS Effect
+111,dtepq,True,"NUMERIC(18, 4)",Extinguishment of Debt Pretax
+112,dvintfq,True,"NUMERIC(19, 4)",Dividends & Interest Receivable (Cash Flow)
+113,dvpq,True,"NUMERIC(18, 4)",Dividends - Preferred/Preference
+114,epsf12,True,"NUMERIC(18, 4)",Earnings Per Share (Diluted) - Excluding Extraordinary Items - 12 Months Moving
+115,epsfi12,True,"NUMERIC(19, 4)",Earnings Per Share (Diluted) - Including Extraordinary Items
+116,epsfiq,True,"NUMERIC(18, 4)",Earnings Per Share (Diluted) - Including Extraordinary Items
+117,epsfxq,True,"NUMERIC(18, 4)",Earnings Per Share (Diluted) - Excluding Extraordinary items
+118,epspi12,True,"NUMERIC(19, 4)",Earnings Per Share (Basic) - Including Extraordinary Items - 12 Months Moving
+119,epspiq,True,"NUMERIC(18, 4)",Earnings Per Share (Basic) - Including Extraordinary Items
+120,epspxq,True,"NUMERIC(18, 4)",Earnings Per Share (Basic) - Excluding Extraordinary Items
+121,epsx12,True,"NUMERIC(18, 4)",Earnings Per Share (Basic) - Excluding Extraordinary Items - 12 Months Moving
+122,esopctq,True,"NUMERIC(18, 4)",Common ESOP Obligation - Total
+123,esopnrq,True,"NUMERIC(18, 4)",Preferred ESOP Obligation - Non-Redeemable
+124,esoprq,True,"NUMERIC(18, 4)",Preferred ESOP Obligation - Redeemable
+125,esoptq,True,"NUMERIC(18, 4)",Preferred ESOP Obligation - Total
+126,esubq,True,"NUMERIC(18, 4)",Equity in Earnings (I/S) - Unconsolidated Subsidiaries
+127,fcaq,True,"NUMERIC(18, 4)",Foreign Exchange Income (Loss)
+128,ffoq,True,"NUMERIC(18, 4)",Funds From Operations (REIT)
+129,finacoq,True,"NUMERIC(19, 4)","Finance Division Other Current Assets, Total"
+130,finaoq,True,"NUMERIC(19, 4)","Finance Division Other Long-Term Assets, Total"
+131,finchq,True,"NUMERIC(19, 4)",Finance Division - Cash
+132,findlcq,True,"NUMERIC(19, 4)",Finance Division Long-Term Debt  Current
+133,findltq,True,"NUMERIC(19, 4)",Finance Division Debt  Long-Term
+134,finivstq,True,"NUMERIC(19, 4)",Finance Division  Short-Term Investments
+135,finlcoq,True,"NUMERIC(19, 4)","Finance Division Other Current Liabilities, Total"
+136,finltoq,True,"NUMERIC(19, 4)","Finance Division Other Long Term Liabilities, Total"
+137,finnpq,True,"NUMERIC(19, 4)",Finance Division Notes Payable
+138,finreccq,True,"NUMERIC(19, 4)",Finance Division  Current Receivables
+139,finrecltq,True,"NUMERIC(19, 4)",Finance Division  Long-Term Receivables
+140,finrevq,True,"NUMERIC(19, 4)",Finance Division Revenue
+141,finxintq,True,"NUMERIC(19, 4)",Finance Division Interest Expense
+142,finxoprq,True,"NUMERIC(19, 4)",Finance Division Operating Expense
+143,gdwlamq,True,"NUMERIC(18, 4)",Amortization of Goodwill
+144,gdwlia12,True,"NUMERIC(18, 4)",Impairments of Goodwill AfterTax - 12mm
+145,gdwliaq,True,"NUMERIC(18, 4)",Impairment of Goodwill After-tax
+146,gdwlid12,True,"NUMERIC(18, 4)",Impairments Diluted EPS - 12mm
+147,gdwlidq,True,"NUMERIC(18, 4)",Impairment of Goodwill Diluted EPS Effect
+148,gdwlieps12,True,"NUMERIC(18, 4)",Impairment of Goodwill Basic EPS Effect 12MM
+149,gdwliepsq,True,"NUMERIC(18, 4)",Impairment of Goodwill Basic EPS Effect
+150,gdwlipq,True,"NUMERIC(18, 4)",Impairment of Goodwill Pretax
+151,gdwlq,True,"NUMERIC(18, 4)",Goodwill (net)
+152,glaq,True,"NUMERIC(18, 4)",Gain/Loss After-Tax
+153,glcea12,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) After-tax 12MM
+154,glceaq,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) After-tax
+155,glced12,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS Effect 12MM
+156,glcedq,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS
+157,glceeps12,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect 12MM
+158,glceepsq,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect
+159,glcepq,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Pretax
+160,gldq,True,"NUMERIC(18, 4)",Gain/Loss Diluted EPS Effect
+161,glepsq,True,"NUMERIC(18, 4)",Gain/Loss Basic EPS Effect
+162,glivq,True,"NUMERIC(19, 4)",Gains/Losses on investments
+163,glpq,True,"NUMERIC(18, 4)",Gain/Loss Pretax
+164,hedgeglq,True,"NUMERIC(18, 4)",Gain/Loss on Ineffective Hedges
+165,ibadj12,True,"NUMERIC(18, 4)",Income Before Extra Items - Adj for Common Stock Equivalents - 12MM
+166,ibadjq,True,"NUMERIC(18, 4)",Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+167,ibcomq,True,"NUMERIC(18, 4)",Income Before Extraordinary Items - Available for Common
+168,ibmiiq,True,"NUMERIC(18, 4)",Income before Extraordinary Items and Noncontrolling Interests
+169,ibq,True,"NUMERIC(18, 4)",Income Before Extraordinary Items
+170,icaptq,True,"NUMERIC(18, 4)",Invested Capital - Total - Quarterly
+171,intaccq,True,"NUMERIC(18, 4)",Interest Accrued
+172,intanoq,True,"NUMERIC(18, 4)",Other Intangibles
+173,intanq,True,"NUMERIC(18, 4)",Intangible Assets - Total
+174,invfgq,True,"NUMERIC(18, 4)",Inventory - Finished Goods
+175,invoq,True,"NUMERIC(18, 4)",Inventory - Other
+176,invrmq,True,"NUMERIC(18, 4)",Inventory - Raw Materials
+177,invtq,True,"NUMERIC(18, 4)",Inventories - Total
+178,invwipq,True,"NUMERIC(18, 4)",Inventory - Work in Process
+179,ivaeqq,True,"NUMERIC(18, 4)",Investment and Advances - Equity
+180,ivaoq,True,"NUMERIC(18, 4)",Investment and Advances - Other
+181,ivltq,True,"NUMERIC(18, 4)",Total Long-term Investments
+182,ivstq,True,"NUMERIC(18, 4)",Short-Term Investments- Total
+183,lcoq,True,"NUMERIC(18, 4)",Current Liabilities - Other - Total
+184,lctq,True,"NUMERIC(18, 4)",Current Liabilities - Total
+185,lltq,True,"NUMERIC(18, 4)",Long-Term Liabilities (Total)
+186,lnoq,True,"NUMERIC(18, 4)",Liabilities Netting & Other Adjustments
+187,lol2q,True,"NUMERIC(18, 4)",Liabilities Level2 (Observable)
+188,loq,True,"NUMERIC(18, 4)",Liabilities - Other
+189,loxdrq,True,"NUMERIC(18, 4)",Liabilities - Other - Excluding Deferred Revenue
+190,lqpl1q,True,"NUMERIC(18, 4)",Liabilities Level1 (Quoted Prices)
+191,lseq,True,"NUMERIC(18, 4)",Liabilities and Stockholders Equity - Total
+192,ltmibq,True,"NUMERIC(18, 4)",Liabilities - Total and Noncontrolling Interest
+193,ltq,True,"NUMERIC(18, 4)",Liabilities - Total
+194,lul3q,True,"NUMERIC(18, 4)",Liabilities Level3 (Unobservable)
+195,mibnq,True,"NUMERIC(18, 4)",Noncontrolling Interests - Nonredeemable - Balance Sheet
+196,mibq,True,"NUMERIC(18, 4)",Noncontrolling Interest - Redeemable - Balance Sheet
+197,mibtq,True,"NUMERIC(18, 4)",Noncontrolling Interests - Total - Balance Sheet
+198,miiq,True,"NUMERIC(18, 4)",Noncontrolling Interest - Income Account
+199,msaq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Marketable Security Adjustments
+200,ncoq,True,"NUMERIC(18, 4)",Net Charge-Offs
+201,niitq,True,"NUMERIC(18, 4)",Net Interest Income (Tax Equivalent)
+202,nimq,True,"NUMERIC(18, 4)",Net Interest Margin
+203,niq,True,"NUMERIC(18, 4)",Net Income (Loss)
+204,nopiq,True,"NUMERIC(18, 4)",Non-Operating Income (Expense) - Total
+205,npatq,True,"NUMERIC(18, 4)",Nonperforming Assets - Total
+206,npq,True,"NUMERIC(18, 4)",Notes Payable
+207,nrtxtdq,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes Diluted EPS Effect
+208,nrtxtepsq,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes Basic EPS Effect
+209,nrtxtq,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes - After-tax
+210,obkq,True,"NUMERIC(18, 4)",Order backlog
+211,oepf12,True,"NUMERIC(18, 4)",Earnings Per Share - Diluted - from Operations - 12MM
+212,oeps12,True,"NUMERIC(18, 4)",Earnings Per Share from Operations - 12 Months Moving
+213,oepsxq,True,"NUMERIC(18, 4)",Earnings Per Share - Diluted - from Operations
+214,oiadpq,True,"NUMERIC(18, 4)",Operating Income After Depreciation - Quarterly
+215,oibdpq,True,"NUMERIC(18, 4)",Operating Income Before Depreciation - Quarterly
+216,opepsq,True,"NUMERIC(18, 4)",Earnings Per Share from Operations
+217,optdrq,True,"NUMERIC(18, 4)",Dividend Rate - Assumption (%)
+218,optfvgrq,True,"NUMERIC(18, 4)",Options - Fair Value of Options Granted
+219,optlifeq,True,"NUMERIC(18, 4)",Life of Options - Assumption (# yrs)
+220,optrfrq,True,"NUMERIC(18, 4)",Risk Free Rate - Assumption (%)
+221,optvolq,True,"NUMERIC(18, 4)",Volatility - Assumption (%)
+222,piq,True,"NUMERIC(18, 4)",Pretax Income
+223,pllq,True,"NUMERIC(18, 4)",Provision for Loan/Asset Losses
+224,pnc12,True,"NUMERIC(18, 4)",Pension Core Adjustment - 12mm
+225,pncd12,True,"NUMERIC(18, 4)",Core Pension Adjustment Diluted EPS Effect 12MM
+226,pncdq,True,"NUMERIC(18, 4)",Core Pension Adjustment Diluted EPS Effect
+227,pnceps12,True,"NUMERIC(18, 4)",Core Pension Adjustment Basic EPS Effect 12MM
+228,pncepsq,True,"NUMERIC(18, 4)",Core Pension Adjustment Basic EPS Effect
+229,pnciapq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment After-tax Preliminary
+230,pnciaq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment After-tax
+231,pncidpq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Diluted EPS Effect Preliminary
+232,pncidq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Diluted EPS Effect
+233,pnciepspq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Basic EPS Effect Preliminary
+234,pnciepsq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Basic EPS Effect
+235,pncippq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Pretax Preliminary
+236,pncipq,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Pretax
+237,pncpd12,True,"NUMERIC(18, 4)",Core Pension Adjustment 12MM Diluted EPS Effect Preliminary
+238,pncpdq,True,"NUMERIC(18, 4)",Core Pension Adjustment Diluted EPS Effect Preliminary
+239,pncpeps12,True,"NUMERIC(18, 4)",Core Pension Adjustment 12MM Basic EPS Effect Preliminary
+240,pncpepsq,True,"NUMERIC(18, 4)",Core Pension Adjustment Basic EPS Effect Preliminary
+241,pncpq,True,"NUMERIC(18, 4)",Core Pension Adjustment Preliminary
+242,pncq,True,"NUMERIC(18, 4)",Core Pension Adjustment
+243,pncwiapq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment After-tax Preliminary
+244,pncwiaq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment After-tax
+245,pncwidpq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Diluted EPS Effect Preliminary
+246,pncwidq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Diluted EPS Effect
+247,pncwiepq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Basic EPS Effect Preliminary
+248,pncwiepsq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Basic EPS Effect
+249,pncwippq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Pretax Preliminary
+250,pncwipq,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Pretax
+251,pnrshoq,True,"NUMERIC(18, 4)",Nonred Pfd Shares Outs (000) - Quarterly
+252,ppegtq,True,"NUMERIC(18, 4)","Property, Plant and Equipment - Total (Gross) - Quarterly"
+253,ppentq,True,"NUMERIC(18, 4)",Property Plant and Equipment - Total (Net)
+254,prcaq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment
+255,prcd12,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Diluted EPS Effect 12MM
+256,prcdq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Diluted EPS Effect
+257,prce12,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment 12MM
+258,prceps12,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Basic EPS Effect 12MM
+259,prcepsq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Basic EPS Effect
+260,prcpd12,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment 12MM Diluted EPS Effect Preliminary
+261,prcpdq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Diluted EPS Effect Preliminary
+262,prcpeps12,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment 12MM Basic EPS Effect Preliminary
+263,prcpepsq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Basic EPS Effect Preliminary
+264,prcpq,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Preliminary
+265,prcraq,True,"NUMERIC(18, 4)",Repurchase Price - Average per share Quarter
+266,prshoq,True,"NUMERIC(18, 4)",Redeem Pfd Shares Outs (000)
+267,pstknq,True,"NUMERIC(18, 4)",Preferred/Preference Stock - Nonredeemable
+268,pstkq,True,"NUMERIC(18, 4)",Preferred/Preference Stock (Capital) - Total
+269,pstkrq,True,"NUMERIC(18, 4)",Preferred/Preference Stock - Redeemable
+270,rcaq,True,"NUMERIC(18, 4)",Restructuring Cost After-tax
+271,rcdq,True,"NUMERIC(18, 4)",Restructuring Cost Diluted EPS Effect
+272,rcepsq,True,"NUMERIC(18, 4)",Restructuring Cost Basic EPS Effect
+273,rcpq,True,"NUMERIC(18, 4)",Restructuring Cost Pretax
+274,rdipaq,True,"NUMERIC(18, 4)",In Process R&D Expense After-tax
+275,rdipdq,True,"NUMERIC(18, 4)",In Process R&D Expense Diluted EPS Effect
+276,rdipepsq,True,"NUMERIC(18, 4)",In Process R&D Expense Basic EPS Effect
+277,rdipq,True,"NUMERIC(18, 4)",In Process R&D
+278,recdq,True,"NUMERIC(18, 4)",Receivables - Estimated Doubtful
+279,rectaq,True,"NUMERIC(18, 4)",Accum Other Comp Inc - Cumulative Translation Adjustments
+280,rectoq,True,"NUMERIC(18, 4)",Receivables - Current Other incl Tax Refunds
+281,rectq,True,"NUMERIC(18, 4)",Receivables - Total
+282,rectrq,True,"NUMERIC(18, 4)",Receivables - Trade
+283,recubq,True,"NUMERIC(18, 4)",Unbilled Receivables - Quarterly
+284,req,True,"NUMERIC(18, 4)",Retained Earnings
+285,retq,True,"NUMERIC(18, 4)",Total RE Property
+286,reunaq,True,"NUMERIC(18, 4)",Unadjusted Retained Earnings
+287,revtq,True,"NUMERIC(18, 4)",Revenue - Total
+288,rllq,True,"NUMERIC(18, 4)",Reserve for Loan/Asset Losses
+289,rra12,True,"NUMERIC(18, 4)",Reversal - Restructruring/Acquisition Aftertax 12MM
+290,rraq,True,"NUMERIC(18, 4)",Reversal - Restructruring/Acquisition Aftertax
+291,rrd12,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Diluted EPS Effect 12MM
+292,rrdq,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Diluted EPS Effect
+293,rreps12,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Basic EPS Effect 12MM
+294,rrepsq,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Basic EPS Effect
+295,rrpq,True,"NUMERIC(18, 4)",Reversal - Restructruring/Acquisition Pretax
+296,rstcheltq,True,"NUMERIC(19, 4)",Long-Term Restricted Cash & Investments
+297,rstcheq,True,"NUMERIC(19, 4)",Restricted Cash & Investments - Current
+298,saleq,True,"NUMERIC(18, 4)",Sales/Turnover (Net)
+299,seqoq,True,"NUMERIC(18, 4)",Other Stockholders- Equity Adjustments
+300,seqq,True,"NUMERIC(18, 4)",Stockholders Equity > Parent > Index Fundamental > Quarterly
+301,seta12,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) AfterTax - 12mm
+302,setaq,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) After-tax
+303,setd12,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Diluted EPS Effect 12MM
+304,setdq,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Diluted EPS Effect
+305,seteps12,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Basic EPS Effect 12MM
+306,setepsq,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Basic EPS Effect
+307,setpq,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Pretax
+308,spce12,True,"NUMERIC(18, 4)",S&P Core Earnings 12MM
+309,spced12,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Diluted 12MM
+310,spcedpq,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Diluted - Preliminary
+311,spcedq,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Diluted
+312,spceeps12,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Basic 12MM
+313,spceepsp12,True,"NUMERIC(18, 4)",S&P Core 12MM EPS - Basic - Preliminary
+314,spceepspq,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Basic - Preliminary
+315,spceepsq,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Basic
+316,spcep12,True,"NUMERIC(18, 4)",S&P Core Earnings 12MM - Preliminary
+317,spcepd12,True,"NUMERIC(18, 4)",S&P Core Earnings 12MM EPS Diluted - Preliminary
+318,spcepq,True,"NUMERIC(18, 4)",S&P Core Earnings - Preliminary
+319,spceq,True,"NUMERIC(18, 4)",S&P Core Earnings
+320,spidq,True,"NUMERIC(18, 4)",Other Special Items Diluted EPS Effect
+321,spiepsq,True,"NUMERIC(18, 4)",Other Special Items Basic EPS Effect
+322,spioaq,True,"NUMERIC(18, 4)",Other Special Items After-tax
+323,spiopq,True,"NUMERIC(18, 4)",Other Special Items Pretax
+324,spiq,True,"NUMERIC(18, 4)",Special Items
+325,sretq,True,"NUMERIC(18, 4)",Gain/Loss on Sale of Property
+326,stkcoq,True,"NUMERIC(18, 4)",Stock Compensation Expense
+327,stkcpaq,True,"NUMERIC(18, 4)",After-tax stock compensation
+328,teqq,True,"NUMERIC(18, 4)",Stockholders Equity - Total
+329,tfvaq,True,"NUMERIC(18, 4)",Total Fair Value Assets
+330,tfvceq,True,"NUMERIC(18, 4)",Total Fair Value Changes including Earnings
+331,tfvlq,True,"NUMERIC(18, 4)",Total Fair Value Liabilities
+332,tieq,True,"NUMERIC(18, 4)",Interest Expense - Total (Financial Services)
+333,tiiq,True,"NUMERIC(18, 4)",Interest Income - Total (Financial Services)
+334,tstknq,True,"NUMERIC(18, 4)",Treasury Stock - Number of Common Shares
+335,tstkq,True,"NUMERIC(18, 4)",Treasury Stock - Total (All Capital)
+336,txdbaq,True,"NUMERIC(18, 4)",Deferred Tax Asset - Long Term
+337,txdbcaq,True,"NUMERIC(18, 4)",Current Deferred Tax Asset
+338,txdbclq,True,"NUMERIC(18, 4)",Current Deferred Tax Liability
+339,txdbq,True,"NUMERIC(18, 4)",Deferred Taxes - Balance Sheet
+340,txdiq,True,"NUMERIC(18, 4)",Income Taxes - Deferred
+341,txditcq,True,"NUMERIC(18, 4)",Deferred Taxes and Investment Tax Credit
+342,txpq,True,"NUMERIC(18, 4)",Income Taxes Payable
+343,txtq,True,"NUMERIC(18, 4)",Income Taxes - Total
+344,txwq,True,"NUMERIC(18, 4)",Excise Taxes
+345,uacoq,True,"NUMERIC(18, 4)",Current Assets - Other - Utility
+346,uaoq,True,"NUMERIC(18, 4)",Other Assets - Utility
+347,uaptq,True,"NUMERIC(18, 4)",Accounts Payable - Utility
+348,ucapsq,True,"NUMERIC(18, 4)",Paid In Capital - Other - Utility
+349,ucconsq,True,"NUMERIC(18, 4)",Contributions In Aid Of Construction
+350,uceqq,True,"NUMERIC(18, 4)",Common Equity - Total - Utility
+351,uddq,True,"NUMERIC(18, 4)",Debt (Debentures) - Utility
+352,udmbq,True,"NUMERIC(18, 4)",Debt (Mortgage Bonds)
+353,udoltq,True,"NUMERIC(18, 4)",Debt (Other Long-Term)
+354,udpcoq,True,"NUMERIC(18, 4)",Debt (Pollution Control Obligations)
+355,udvpq,True,"NUMERIC(18, 4)",Preferred Dividend Requirements
+356,ugiq,True,"NUMERIC(18, 4)",Gross Income (Income Before Interest Charges)
+357,uinvq,True,"NUMERIC(18, 4)",Inventories
+358,ulcoq,True,"NUMERIC(18, 4)",Current Liabilities - Other
+359,uniamiq,True,"NUMERIC(18, 4)",Net Income before Extraordinary Items After Noncontrolling Interest
+360,unopincq,True,"NUMERIC(18, 4)",Nonoperating Income (Net) - Other
+361,uopiq,True,"NUMERIC(18, 4)",Operating Income - Total - Utility
+362,updvpq,True,"NUMERIC(18, 4)",Preference Dividend Requirements - Utility
+363,upmcstkq,True,"NUMERIC(18, 4)",Premium On Common Stock - Utility
+364,upmpfq,True,"NUMERIC(18, 4)",Premium On Preferred Stock - Utility
+365,upmpfsq,True,"NUMERIC(18, 4)",Premium On Preference Stock - Utility
+366,upmsubpq,True,"NUMERIC(18, 4)",Premium On Subsidiary Preferred Stock - Utility
+367,upstkcq,True,"NUMERIC(18, 4)",Preference Stock At Carrying Value - Utility
+368,upstkq,True,"NUMERIC(18, 4)",Preferred Stock At Carrying Value - Utility
+369,urectq,True,"NUMERIC(18, 4)",Receivables (Net) - Utility
+370,uspiq,True,"NUMERIC(18, 4)",Special Items - Utility
+371,usubdvpq,True,"NUMERIC(18, 4)",Subsidiary Preferred Dividends - Utility
+372,usubpcvq,True,"NUMERIC(18, 4)",Subsidiary Preferred Stock At Carrying Value - Utility
+373,utemq,True,"NUMERIC(18, 4)",Maintenance Expense - Total
+374,wcapq,True,"NUMERIC(18, 4)",Working Capital (Balance Sheet)
+375,wdaq,True,"NUMERIC(18, 4)",Writedowns After-tax
+376,wddq,True,"NUMERIC(18, 4)",Writedowns Diluted EPS Effect
+377,wdepsq,True,"NUMERIC(18, 4)",Writedowns Basic EPS Effect
+378,wdpq,True,"NUMERIC(18, 4)",Writedowns Pretax
+379,xaccq,True,"NUMERIC(18, 4)",Accrued Expenses
+380,xidoq,True,"NUMERIC(18, 4)",Extraordinary Items and Discontinued Operations
+381,xintq,True,"NUMERIC(18, 4)",Interest and Related Expense- Total
+382,xiq,True,"NUMERIC(18, 4)",Extraordinary Items
+383,xoprq,True,"NUMERIC(18, 4)",Operating Expense- Total
+384,xopt12,True,"NUMERIC(18, 4)",Implied Option Expense - 12mm
+385,xoptd12,True,"NUMERIC(18, 4)",Implied Option EPS Diluted 12MM
+386,xoptd12p,True,"NUMERIC(18, 4)",Implied Option 12MM EPS Diluted Preliminary
+387,xoptdq,True,"NUMERIC(18, 4)",Implied Option EPS Diluted
+388,xoptdqp,True,"NUMERIC(18, 4)",Implied Option EPS Diluted Preliminary
+389,xopteps12,True,"NUMERIC(18, 4)",Implied Option EPS Basic 12MM
+390,xoptepsp12,True,"NUMERIC(18, 4)",Implied Option 12MM EPS Basic Preliminary
+391,xoptepsq,True,"NUMERIC(18, 4)",Implied Option EPS Basic
+392,xoptepsqp,True,"NUMERIC(18, 4)",Implied Option EPS Basic Preliminary
+393,xoptq,True,"NUMERIC(18, 4)",Implied Option Expense
+394,xoptqp,True,"NUMERIC(18, 4)",Implied Option Expense Preliminary
+395,xrdq,True,"NUMERIC(18, 4)",Research and Development Expense
+396,xsgaq,True,"NUMERIC(18, 4)","Selling, General and Administrative Expenses"
+397,acchgy,True,"NUMERIC(18, 4)",Accounting Changes - Cumulative Effect
+398,afudccy,True,"NUMERIC(18, 4)",Allowance for Funds Used During Construction (Cash Flow)
+399,afudciy,True,"NUMERIC(18, 4)",Allowance for Funds Used During Construction (Investing) (Cash Flow)
+400,amcy,True,"NUMERIC(18, 4)",Amortization (Cash Flow)
+401,aolochy,True,"NUMERIC(18, 4)",Assets and Liabilities - Other (Net Change)
+402,apalchy,True,"NUMERIC(18, 4)",Accounts Payable and Accrued Liabilities - Increase (Decrease)
+403,aqay,True,"NUMERIC(18, 4)",Acquisition/Merger After-Tax
+404,aqcy,True,"NUMERIC(18, 4)",Acquisitions
+405,aqdy,True,"NUMERIC(18, 4)",Acquisition/Merger Diluted EPS Effect
+406,aqepsy,True,"NUMERIC(18, 4)",Acquisition/Merger Basic EPS Effect
+407,aqpy,True,"NUMERIC(18, 4)",Acquisition/Merger Pretax
+408,arcedy,True,"NUMERIC(18, 4)",As Reported Core - Diluted EPS Effect
+409,arceepsy,True,"NUMERIC(18, 4)",As Reported Core - Basic EPS Effect
+410,arcey,True,"NUMERIC(18, 4)",As Reported Core - After-tax
+411,capxy,True,"NUMERIC(18, 4)",Capital Expenditures
+412,cdvcy,True,"NUMERIC(18, 4)",Cash Dividends on Common Stock (Cash Flow)
+413,chechy,True,"NUMERIC(18, 4)",Cash and Cash Equivalents - Increase (Decrease)
+414,cibegniy,True,"NUMERIC(18, 4)",Comp Inc - Beginning Net Income
+415,cicurry,True,"NUMERIC(18, 4)",Comp Inc - Currency Trans Adj
+416,cidergly,True,"NUMERIC(18, 4)",Comp Inc - Derivative Gains/Losses
+417,cimiiy,True,"NUMERIC(18, 4)",Comprehensive Income - Noncontrolling Interest
+418,ciothery,True,"NUMERIC(18, 4)",Comp Inc - Other Adj
+419,cipeny,True,"NUMERIC(18, 4)",Comp Inc - Minimum Pension Adj
+420,cisecgly,True,"NUMERIC(18, 4)",Comp Inc - Securities Gains/Losses
+421,citotaly,True,"NUMERIC(18, 4)",Comprehensive Income - Parent
+422,ciy,True,"NUMERIC(18, 4)",Comprehensive Income - Total
+423,cogsy,True,"NUMERIC(18, 4)",Cost of Goods Sold
+424,cshfdy,True,"NUMERIC(18, 4)",Com Shares for Diluted EPS
+425,cshpry,True,"NUMERIC(18, 4)",Common Shares Used to Calculate Earnings Per Share - Basic
+426,cstkey,True,"NUMERIC(18, 4)",Common Stock Equivalents - Dollar Savings
+427,depcy,True,"NUMERIC(18, 4)",Depreciation and Depletion (Cash Flow)
+428,derhedgly,True,"NUMERIC(19, 4)",Gains/Losses on Derivatives and Hedging
+429,dilady,True,"NUMERIC(18, 4)",Dilution Adjustment
+430,dilavy,True,"NUMERIC(18, 4)",Dilution Available - Excluding Extraordinary Items
+431,dlcchy,True,"NUMERIC(18, 4)",Changes in Current Debt
+432,dltisy,True,"NUMERIC(18, 4)",Long-Term Debt - Issuance
+433,dltry,True,"NUMERIC(18, 4)",Long-Term Debt - Reduction
+434,doy,True,"NUMERIC(18, 4)",Discontinued Operations
+435,dpcy,True,"NUMERIC(18, 4)",Depreciation and Amortization - Statement of Cash Flows
+436,dprety,True,"NUMERIC(18, 4)",Depr/Amort of Property
+437,dpy,True,"NUMERIC(18, 4)",Depreciation and Amortization - Total
+438,dteay,True,"NUMERIC(18, 4)",Extinguishment of Debt After-tax
+439,dtedy,True,"NUMERIC(18, 4)",Extinguishment of Debt Diluted EPS Effect
+440,dteepsy,True,"NUMERIC(18, 4)",Extinguishment of Debt Basic EPS Effect
+441,dtepy,True,"NUMERIC(18, 4)",Extinguishment of Debt Pretax
+442,dvpy,True,"NUMERIC(18, 4)",Dividends - Preferred/Preference
+443,dvy,True,"NUMERIC(18, 4)",Cash Dividends
+444,epsfiy,True,"NUMERIC(18, 4)",Earnings Per Share (Diluted) - Including Extraordinary Items
+445,epsfxy,True,"NUMERIC(18, 4)",Earnings Per Share (Diluted) - Excluding Extraordinary items
+446,epspiy,True,"NUMERIC(18, 4)",Earnings Per Share (Basic) - Including Extraordinary Items
+447,epspxy,True,"NUMERIC(18, 4)",Earnings Per Share (Basic) - Excluding Extraordinary Items
+448,esubcy,True,"NUMERIC(18, 4)",Equity in Net Loss/Earnings (C/F)
+449,esuby,True,"NUMERIC(18, 4)",Equity in Earnings (I/S)- Unconsolidated Subsidiaries
+450,exrey,True,"NUMERIC(18, 4)",Exchange Rate Effect
+451,fcay,True,"NUMERIC(18, 4)",Foreign Exchange Income (Loss)
+452,ffoy,True,"NUMERIC(18, 4)",Funds From Operations (REIT)
+453,fiaoy,True,"NUMERIC(18, 4)",Financing Activities - Other
+454,fincfy,True,"NUMERIC(18, 4)",Financing Activities - Net Cash Flow
+455,finrevy,True,"NUMERIC(19, 4)",Finance Division Revenue
+456,finxinty,True,"NUMERIC(19, 4)",Finance Division Interest Expense
+457,finxopry,True,"NUMERIC(19, 4)",Finance Division Operating Expense
+458,fopoxy,True,"NUMERIC(18, 4)",Funds from Operations - Other excluding Option Tax Benefit
+459,fopoy,True,"NUMERIC(18, 4)",Funds from Operations - Other
+460,fopty,True,"NUMERIC(18, 4)",Funds From Operations - Total
+461,fsrcoy,True,"NUMERIC(18, 4)",Sources of Funds - Other
+462,fsrcty,True,"NUMERIC(18, 4)",Sources of Funds - Total
+463,fuseoy,True,"NUMERIC(18, 4)",Uses of Funds - Other
+464,fusety,True,"NUMERIC(18, 4)",Uses of Funds - Total
+465,gdwlamy,True,"NUMERIC(18, 4)",Amortization of Goodwill
+466,gdwliay,True,"NUMERIC(18, 4)",Impairment of Goodwill After-tax
+467,gdwlidy,True,"NUMERIC(18, 4)",Impairment of Goodwill Diluted EPS Effect
+468,gdwliepsy,True,"NUMERIC(18, 4)",Impairment of Goodwill Basic EPS Effect
+469,gdwlipy,True,"NUMERIC(18, 4)",Impairment of Goodwill Pretax
+470,glay,True,"NUMERIC(18, 4)",Gain/Loss After-Tax
+471,glceay,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) After-tax
+472,glcedy,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS
+473,glceepsy,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect
+474,glcepy,True,"NUMERIC(18, 4)",Gain/Loss on Sale (Core Earnings Adjusted) Pretax
+475,gldy,True,"NUMERIC(18, 4)",Gain/Loss Diluted EPS Effect
+476,glepsy,True,"NUMERIC(18, 4)",Gain/Loss Basic EPS Effect
+477,glivy,True,"NUMERIC(19, 4)",Gains/Losses on investments
+478,glpy,True,"NUMERIC(18, 4)",Gain/Loss Pretax
+479,hedgegly,True,"NUMERIC(18, 4)",Gain/Loss on Ineffective Hedges
+480,ibadjy,True,"NUMERIC(18, 4)",Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+481,ibcomy,True,"NUMERIC(18, 4)",Income Before Extraordinary Items - Available for Common
+482,ibcy,True,"NUMERIC(18, 4)",Income Before Extraordinary Items - Statement of Cash Flows
+483,ibmiiy,True,"NUMERIC(18, 4)",Income before Extraordinary Items and Noncontrolling Interests
+484,iby,True,"NUMERIC(18, 4)",Income Before Extraordinary Items
+485,intpny,True,"NUMERIC(18, 4)",Interest Paid - Net
+486,invchy,True,"NUMERIC(18, 4)",Inventory - Decrease (Increase)
+487,itccy,True,"NUMERIC(18, 4)",Investment Tax Credit - Net (Cash Flow)
+488,ivacoy,True,"NUMERIC(18, 4)",Investing Activities - Other
+489,ivchy,True,"NUMERIC(18, 4)",Increase in Investments
+490,ivncfy,True,"NUMERIC(18, 4)",Investing Activities - Net Cash Flow
+491,ivstchy,True,"NUMERIC(18, 4)",Short-Term Investments - Change
+492,miiy,True,"NUMERIC(18, 4)",Noncontrolling Interest - Income Account
+493,ncoy,True,"NUMERIC(18, 4)",Net Charge-Offs
+494,niity,True,"NUMERIC(18, 4)",Net Interest Income (Tax Equivalent)
+495,nimy,True,"NUMERIC(18, 4)",Net Interest Margin
+496,niy,True,"NUMERIC(18, 4)",Net Income (Loss)
+497,nopiy,True,"NUMERIC(18, 4)",Non-Operating Income (Expense) - Total
+498,nrtxtdy,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes Diluted EPS Effect
+499,nrtxtepsy,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes Basic EPS Effect
+500,nrtxty,True,"NUMERIC(18, 4)",Nonrecurring Income Taxes - After-tax
+501,oancfy,True,"NUMERIC(18, 4)",Operating Activities - Net Cash Flow
+502,oepsxy,True,"NUMERIC(18, 4)",Earnings Per Share - Diluted - from Operations
+503,oiadpy,True,"NUMERIC(18, 4)",Operating Income After Depreciation - Year-to-Date
+504,oibdpy,True,"NUMERIC(18, 4)",Operating Income Before Depreciation
+505,opepsy,True,"NUMERIC(18, 4)",Earnings Per Share from Operations
+506,optdry,True,"NUMERIC(18, 4)",Dividend Rate - Assumption (%)
+507,optfvgry,True,"NUMERIC(18, 4)",Options - Fair Value of Options Granted
+508,optlifey,True,"NUMERIC(18, 4)",Life of Options - Assumption (# yrs)
+509,optrfry,True,"NUMERIC(18, 4)",Risk Free Rate - Assumption (%)
+510,optvoly,True,"NUMERIC(18, 4)",Volatility - Assumption (%)
+511,pdvcy,True,"NUMERIC(18, 4)",Cash Dividends on Preferred/Preference Stock (Cash Flow)
+512,piy,True,"NUMERIC(18, 4)",Pretax Income
+513,plly,True,"NUMERIC(18, 4)",Provision for Loan/Asset Losses
+514,pncdy,True,"NUMERIC(18, 4)",Core Pension Adjustment Diluted EPS Effect
+515,pncepsy,True,"NUMERIC(18, 4)",Core Pension Adjustment Basic EPS Effect
+516,pnciapy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment After-tax Preliminary
+517,pnciay,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment After-tax
+518,pncidpy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Diluted EPS Effect Preliminary
+519,pncidy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Diluted EPS Effect
+520,pnciepspy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Basic EPS Effect Preliminary
+521,pnciepsy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Basic EPS Effect
+522,pncippy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Pretax Preliminary
+523,pncipy,True,"NUMERIC(18, 4)",Core Pension Interest Adjustment Pretax
+524,pncpdy,True,"NUMERIC(18, 4)",Core Pension Adjustment Diluted EPS Effect Preliminary
+525,pncpepsy,True,"NUMERIC(18, 4)",Core Pension Adjustment Basic EPS Effect Preliminary
+526,pncpy,True,"NUMERIC(18, 4)",Core Pension Adjustment Preliminary
+527,pncwiapy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment After-tax Preliminary
+528,pncwiay,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment After-tax
+529,pncwidpy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Diluted EPS Effect Preliminary
+530,pncwidy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Diluted EPS Effect
+531,pncwiepsy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Basic EPS Effect
+532,pncwiepy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Basic EPS Effect Preliminary
+533,pncwippy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Pretax Preliminary
+534,pncwipy,True,"NUMERIC(18, 4)",Core Pension w/o Interest Adjustment Pretax
+535,pncy,True,"NUMERIC(18, 4)",Core Pension Adjustment
+536,prcay,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment
+537,prcdy,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Diluted EPS Effect
+538,prcepsy,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Basic EPS Effect
+539,prcpdy,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Diluted EPS Effect Preliminary
+540,prcpepsy,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Basic EPS Effect Preliminary
+541,prcpy,True,"NUMERIC(18, 4)",Core Post Retirement Adjustment Preliminary
+542,prstkccy,True,"NUMERIC(18, 4)",Purchase of Common Stock (Cash Flow)
+543,prstkcy,True,"NUMERIC(18, 4)",Purchase of Common and Preferred Stock
+544,prstkpcy,True,"NUMERIC(18, 4)",Purchase of Preferred/Preference Stock (Cash Flow)
+545,rcay,True,"NUMERIC(18, 4)",Restructuring Cost After-tax
+546,rcdy,True,"NUMERIC(18, 4)",Restructuring Cost Diluted EPS Effect
+547,rcepsy,True,"NUMERIC(18, 4)",Restructuring Cost Basic EPS Effect
+548,rcpy,True,"NUMERIC(18, 4)",Restructuring Cost Pretax
+549,rdipay,True,"NUMERIC(18, 4)",In Process R&D Expense After-tax
+550,rdipdy,True,"NUMERIC(18, 4)",In Process R&D Expense Diluted EPS Effect
+551,rdipepsy,True,"NUMERIC(18, 4)",In Process R&D Expense Basic EPS Effect
+552,rdipy,True,"NUMERIC(18, 4)",In Process R&D
+553,recchy,True,"NUMERIC(18, 4)",Accounts Receivable - Decrease (Increase)
+554,revty,True,"NUMERIC(18, 4)",Revenue - Total
+555,rray,True,"NUMERIC(18, 4)",Reversal - Restructruring/Acquisition Aftertax
+556,rrdy,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Diluted EPS Effect
+557,rrepsy,True,"NUMERIC(18, 4)",Reversal - Restructuring/Acq Basic EPS Effect
+558,rrpy,True,"NUMERIC(18, 4)",Reversal - Restructruring/Acquisition Pretax
+559,saley,True,"NUMERIC(18, 4)",Sales/Turnover (Net)
+560,scstkcy,True,"NUMERIC(18, 4)",Sale of Common Stock (Cash Flow)
+561,setay,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) After-tax
+562,setdy,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Diluted EPS Effect
+563,setepsy,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Basic EPS Effect
+564,setpy,True,"NUMERIC(18, 4)",Settlement (Litigation/Insurance) Pretax
+565,sivy,True,"NUMERIC(18, 4)",Sale of Investments
+566,spcedpy,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Diluted - Preliminary
+567,spcedy,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Diluted
+568,spceepspy,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Basic - Preliminary
+569,spceepsy,True,"NUMERIC(18, 4)",S&P Core Earnings EPS Basic
+570,spcepy,True,"NUMERIC(18, 4)",S&P Core Earnings - Preliminary
+571,spcey,True,"NUMERIC(18, 4)",S&P Core Earnings
+572,spidy,True,"NUMERIC(18, 4)",Other Special Items Diluted EPS Effect
+573,spiepsy,True,"NUMERIC(18, 4)",Other Special Items Basic EPS Effect
+574,spioay,True,"NUMERIC(18, 4)",Other Special Items After-tax
+575,spiopy,True,"NUMERIC(18, 4)",Other Special Items Pretax
+576,spiy,True,"NUMERIC(18, 4)",Special Items
+577,sppey,True,"NUMERIC(18, 4)",Sale of Property
+578,sppivy,True,"NUMERIC(18, 4)",Sale of PP&E and Investments - (Gain) Loss
+579,spstkcy,True,"NUMERIC(18, 4)",Sale of Preferred/Preference Stock (Cash Flow)
+580,srety,True,"NUMERIC(18, 4)",Gain/Loss on Sale of Property
+581,sstky,True,"NUMERIC(18, 4)",Sale of Common and Preferred Stock
+582,stkcoy,True,"NUMERIC(18, 4)",Stock Compensation Expense
+583,stkcpay,True,"NUMERIC(18, 4)",After-tax stock compensation
+584,tdcy,True,"NUMERIC(18, 4)",Deferred Income Taxes - Net (Cash Flow)
+585,tfvcey,True,"NUMERIC(18, 4)",Total Fair Value Changes including Earnings
+586,tiey,True,"NUMERIC(18, 4)",Interest Expense - Total (Financial Services)
+587,tiiy,True,"NUMERIC(18, 4)",Interest Income - Total (Financial Services)
+588,tsafcy,True,"NUMERIC(18, 4)",Total Srcs of Funds (FOF)
+589,txachy,True,"NUMERIC(18, 4)",Income Taxes - Accrued - Increase (Decrease)
+590,txbcofy,True,"NUMERIC(18, 4)",Excess Tax Benefit of Stock Options - Cash Flow Financing
+591,txbcoy,True,"NUMERIC(18, 4)",Excess Tax Benefit of Stock Options - Cash Flow Operating
+592,txdcy,True,"NUMERIC(18, 4)",Deferred Taxes (Statement of Cash Flows)
+593,txdiy,True,"NUMERIC(18, 4)",Income Taxes - Deferred
+594,txpdy,True,"NUMERIC(18, 4)",Income Taxes Paid
+595,txty,True,"NUMERIC(18, 4)",Income Taxes - Total
+596,txwy,True,"NUMERIC(18, 4)",Excise Taxes
+597,uaolochy,True,"NUMERIC(18, 4)",Other Assets and Liabilities - Net Change (Statement of Cash Flows)
+598,udfccy,True,"NUMERIC(18, 4)",Deferred Fuel - Increase (Decrease) (Statement of Cash Flows)
+599,udvpy,True,"NUMERIC(18, 4)",Preferred Dividend Requirements - Utility
+600,ufretsdy,True,"NUMERIC(18, 4)",Tot Funds Ret ofSec&STD (FOF)
+601,ugiy,True,"NUMERIC(18, 4)",Gross Income (Income Before Interest Charges) - Utility
+602,uniamiy,True,"NUMERIC(18, 4)",Net Income before Extraordinary Items After Noncontrolling Interest - Utility
+603,unopincy,True,"NUMERIC(18, 4)",Nonoperating Income (Net) - Other - Utility
+604,unwccy,True,"NUMERIC(18, 4)",Inc(Dec)Working Cap (FOF)
+605,uoisy,True,"NUMERIC(18, 4)",Other Internal Sources - Net (Cash Flow)
+606,updvpy,True,"NUMERIC(18, 4)",Preference Dividend Requirements - Utility
+607,uptacy,True,"NUMERIC(18, 4)",Utility Plant - Gross Additions (Cash Flow)
+608,uspiy,True,"NUMERIC(18, 4)",Special Items - Utility
+609,ustdncy,True,"NUMERIC(18, 4)",Net Decr in ST Debt (FOF)
+610,usubdvpy,True,"NUMERIC(18, 4)",Subsidiary Preferred Dividends - Utility
+611,utfdocy,True,"NUMERIC(18, 4)",Total Funds From Ops (FOF)
+612,utfoscy,True,"NUMERIC(18, 4)",Tot Funds Frm Outside Sources (FOF)
+613,utmey,True,"NUMERIC(18, 4)",Maintenance Expense - Total
+614,uwkcapcy,True,"NUMERIC(18, 4)",Dec(Inc) in Working Capital (FOF)
+615,wcapchy,True,"NUMERIC(18, 4)",Working Capital Changes - Total
+616,wcapcy,True,"NUMERIC(18, 4)",Working Capital Change - Other - Increase/(Decrease)
+617,wday,True,"NUMERIC(18, 4)",Writedowns After-tax
+618,wddy,True,"NUMERIC(18, 4)",Writedowns Diluted EPS Effect
+619,wdepsy,True,"NUMERIC(18, 4)",Writedowns Basic EPS Effect
+620,wdpy,True,"NUMERIC(18, 4)",Writedowns Pretax
+621,xidocy,True,"NUMERIC(18, 4)",Extraordinary Items and Discontinued Operations (Statement of Cash Flows)
+622,xidoy,True,"NUMERIC(18, 4)",Extraordinary Items and Discontinued Operations
+623,xinty,True,"NUMERIC(18, 4)",Interest and Related Expense- Total
+624,xiy,True,"NUMERIC(18, 4)",Extraordinary Items
+625,xopry,True,"NUMERIC(18, 4)",Operating Expense- Total
+626,xoptdqpy,True,"NUMERIC(18, 4)",Implied Option EPS Diluted Preliminary
+627,xoptdy,True,"NUMERIC(18, 4)",Implied Option EPS Diluted
+628,xoptepsqpy,True,"NUMERIC(18, 4)",Implied Option EPS Basic Preliminary
+629,xoptepsy,True,"NUMERIC(18, 4)",Implied Option EPS Basic
+630,xoptqpy,True,"NUMERIC(18, 4)",Implied Option Expense Preliminary
+631,xopty,True,"NUMERIC(18, 4)",Implied Option Expense
+632,xrdy,True,"NUMERIC(18, 4)",Research and Development Expense
+633,xsgay,True,"NUMERIC(18, 4)","Selling, General and Administrative Expenses"
+634,iid,True,VARCHAR(3),Issue ID - Security
+635,exchg,True,INTEGER,Stock Exchange Code
+636,cik,True,VARCHAR(10),CIK Number
+637,costat,True,VARCHAR(1),Active/Inactive Status Marker
+638,fic,True,VARCHAR(3),Current ISO Country Code - Incorporation
+639,cshtrq,True,"NUMERIC(18, 4)",Common Shares Traded - Quarter
+640,dvpspq,True,"NUMERIC(18, 4)",Dividends per Share - Pay Date - Quarter
+641,dvpsxq,True,"NUMERIC(18, 4)",Div per Share - Exdate - Quarter
+642,mkvaltq,True,"NUMERIC(18, 4)",Market Value - Total
+643,prccq,True,"NUMERIC(24, 12)",Price Close - Quarter
+644,prchq,True,"NUMERIC(24, 12)",Price High - Quarter
+645,prclq,True,"NUMERIC(24, 12)",Price Low - Quarter
+646,adjex,True,"NUMERIC(24, 12)",Cumulative Adjustment Factor by Ex-Date
