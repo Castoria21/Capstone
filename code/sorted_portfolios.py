@@ -2,16 +2,15 @@
 This script contains functionalities to compute the sorted portfolio returns given characteristics and returns.
 """
 
-from typing import Optional
+from typing import Union
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from datetime import datetime
-from utils import create_empty_df, create_ew_df
+from utils import create_ew_df
 
 
 def get_sorted_index(
-        df: pd.DataFrame, holding_period: int=12, quantiles: np.ndarray=np.linspace(.1, 1, 9, endpoint=False)
+        df: pd.DataFrame, holding_period: int=12, 
+        quantiles: np.ndarray=np.linspace(.1, 1, 9, endpoint=False)
 ) -> list[pd.DataFrame]:
     """
     This function is used to construct a list of DataFrames that indicates if the stocks contained in the sorted group.
@@ -47,7 +46,8 @@ def get_sorted_index(
 
 
 def get_sorted_portfolio(
-        df_ret: pd.DataFrame, df_idx_l: list[pd.DataFrame], cost: float=0.0005, weights: Optional[list[pd.DataFrame], None]=None
+        df_ret: pd.DataFrame, df_idx_l: list[pd.DataFrame], cost: float=0.0005, 
+        weights: Union[list[pd.DataFrame], None]=None
 ) -> pd.DataFrame:
     """
     This function produces the sorted portfolio returns.
@@ -64,9 +64,8 @@ def get_sorted_portfolio(
         weights = [create_ew_df(df) for df in df_idx_l]
     groups = len(df_idx_l)
     portfolio = pd.concat(
-        [
-            (df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) for i in range(groups)
-        ], axis=1
+        [(df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) for i in range(groups)], 
+        axis=1
     )
     return portfolio
     
