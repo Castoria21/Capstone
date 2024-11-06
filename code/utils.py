@@ -3,6 +3,12 @@ import numpy as np
 import pandas as pd
 
 
+def forward_fill(df, holding_period):
+    if holding_period > 1:
+        return df.ffill(limit=holding_period-1)
+    return df
+
+
 def filter_datetime_df(df, start, end):
     return df[(df.index <= datetime(*end)) & (df.index >= datetime(*start))]
 
@@ -41,9 +47,10 @@ def get_time_merge(df_feature, df_ret):
     return aligned_df
 
 
-def get_formatted_feature(df, df_ret, feature_name, ffill_limit, scale_window=None):
-    temp =  date_cusip_pivot(df, feature_name).reindex(columns=df_ret.columns)
-    temp = get_time_merge(temp, df_ret).ffill(limit=ffill_limit)
+def get_formatted_feature(df, df_ret, feature_name, holding_period):
+    temp = get_non_duplicated_df(df, feature_name)
+    temp =  date_cusip_pivot(temp, feature_name).reindex(columns=df_ret.columns)
+    temp = forward_fill(get_time_merge(temp, df_ret), holding_period)
     return temp
 
 
