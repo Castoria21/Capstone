@@ -36,18 +36,18 @@ def get_pm_pct_df(df_comp, df_ret, ffill_limit=ffill_max, scale_window=None):
     return get_formatted_feature(df, df_ret, "pm_pct", ffill_limit, scale_window)
 
 
-def get_size_df(df_crsp, ffill_limit=ffill_max):
-    """
-    Get market value as size.
-    """
-    df = df_crsp.copy(deep=True)
-    df['size'] = df.eval("prc*shrout")
-    return date_cusip_pivot(df, "size").ffill(limit=ffill_limit)
+# def get_size_df(df_crsp, ffill_limit=ffill_max):
+#     """
+#     Get market value as size.
+#     """
+#     df = df_crsp.copy(deep=True)
+#     df['size'] = df.eval("prc*shrout")
+#     return date_cusip_pivot(df, "size").ffill(limit=ffill_limit)
 
 
-def get_size_df_comp(df_comp, df_ret, ffill_limit=ffill_max):
+def get_size_df(df_comp, df_ret, ffill_limit=ffill_max):
     df = df_comp.copy(deep=True)
-    df['size'] = df['mkvalt']
+    df['size'] = df['mkvaltq']
     df = get_non_duplicated_df(df, "size")
     return get_formatted_feature(df, df_ret, "size", ffill_limit=ffill_limit)
 
