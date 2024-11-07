@@ -4,7 +4,7 @@ This script is used for generating DataFrames, with values of features, columns 
 
 import pandas as pd
 import numpy as np
-from utils import *
+from .utils import *
 
 def get_momentum(
         df_ret: pd.DataFrame, window: int=12, periods_skipped: int=1

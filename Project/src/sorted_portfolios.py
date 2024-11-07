@@ -5,8 +5,7 @@ This script contains functionalities to compute the sorted portfolio returns giv
 from typing import Union
 import pandas as pd
 import numpy as np
-from utils import create_ew_df
-
+from .utils import create_ew_df
 
 def get_sorted_index(
         df: pd.DataFrame, holding_period: int=12, 
