@@ -62,11 +62,82 @@ def get_pm_df(
     df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
 ) -> pd.DataFrame:
     """
-    Get profit margin.
+    Get profit margin = net income quarterly / sales quarterly.
     """
     df_pm = df_comp_fundq["date cusip niq saleq consol".split()]
     df_pm['pm'] = df_pm.eval("niq/saleq")
     return get_formatted_feature(df_pm, df_ret, "pm", holding_period)
+
+
+def get_dvx_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get divident yield = dividend per share excluding extraordinary quarterly / price close quarterly.
+    """
+    df_pm = df_comp_fundq["date cusip dvpsxq prccq consol".split()]
+    df_pm['dvpsxq'] = df_pm.eval("dvpsxq/prccq")
+    df_pm = df_pm[df_pm['dvpsxq'] > 0]
+    df_pm['dvpsxq'] = (df_pm['dvpsxq'] - df_pm['dvpsxq'].mean()) ** 2 / df_pm['dvpsxq'].var()
+    return get_formatted_feature(df_pm, df_ret, "dvpsxq", holding_period)
+
+
+def get_cr_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get current ratio = current total assets quarterly / current total liabilities quarterly.
+    """
+    df_pm = df_comp_fundq["date cusip actq lctq consol".split()]
+    df_pm['cr'] = df_pm.eval("actq/lctq")
+    return get_formatted_feature(df_pm, df_ret, "cr", holding_period)
+
+
+def get_bm_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get bp = net assets / total market value
+    """
+    df_pm = df_comp_fundq["date cusip cstkeq prccq cshoq consol".split()]
+    df_pm['bm'] = df_pm.eval("cstkeq/(prccq*cshoq)")
+    return get_formatted_feature(df_pm, df_ret, "bm", holding_period)
+
+
+def get_e2e_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get ev/ebitda = (total market value - net liability + cash and cash equivalents) / (operating income + depreciation and amortization)
+    """
+    df_pm = df_comp_fundq["date cusip prccq cshoq lctq cheq oiadpq dpq consol".split()]
+    df_pm['e2e'] = df_pm.eval("((prccq*cshoq)-lctq+cheq)/(oiadpq+dpq)")
+    return get_formatted_feature(df_pm, df_ret, "e2e", holding_period)
+
+
+def get_sm_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get sales-to-market ratio = sales quarterly / total market value
+    """
+    df_pm = df_comp_fundq["date cusip saleq prccq cshoq consol".split()]
+    df_pm['sm'] = df_pm.eval("saleq/(prccq*cshoq)")
+    return get_formatted_feature(df_pm, df_ret, "sm", holding_period)
+
+
+def get_peg_df(
+    df_comp_fundq: pd.DataFrame, df_ret: pd.DataFrame, holding_period: pd.DataFrame
+) -> pd.DataFrame:
+    """
+    Get peg ratio = p/e ratio / earnings growth rate
+    """
+    df_pm = df_comp_fundq["date cusip prccq epspxq cshoq consol".split()]
+    df_pm['epspxq_pct'] = df_pm.groupby('cusip')['epspxq'].pct_change()
+    df_pm = df_pm[df_pm['epspxq_pct'] > 0]
+    df_pm['pe'] = df_pm.eval("prccq/epspxq")
+    df_pm['peg'] = df_pm.eval("pe/epspxq_pct")
+    return get_formatted_feature(df_pm, df_ret, "peg", holding_period)
 
 
 if __name__ == "__main__":
