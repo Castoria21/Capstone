@@ -19,6 +19,15 @@ def forward_fill(
     return df
 
 
+def truncate(
+        ser: pd.Series
+) -> pd.Series:
+    """
+    Save the part of series after its first non-zero element.
+    """
+    return ser[ser[ser != 0].index[0]:]
+
+
 def filter_datetime_df(
         df: pd.DataFrame, start: tuple[int, int, int], end: tuple[int, int, int]
 ) -> pd.DataFrame:
