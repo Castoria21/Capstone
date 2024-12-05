@@ -1,0 +1,214 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{makecell}
+\setbeamertemplate{navigation symbols}{}
+
+% Author, Title, Date
+\title[Fundamental Momentum]{Fundamental Momentum Based Stock Investing}
+\author[]{Sicheng~Wang\and Taoying~Zhao\and Pengcheng~Zhou\\~\\
+Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
+\centering
+\date{Capstone Project, 2024}
+% Table of Contents
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+% Document
+\begin{document}
+    \maketitle
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents
+    \end{frame}
+
+% Section 1: Introduction
+\section{Introduction}
+\begin{frame}
+    \frametitle{Background}
+    \begin{block}{Extensive Research on Momentum Strategies}
+        \begin{itemize}
+            \item Explaining the profitability of momentum strategies {\color{blue} (Chan et al., 1996)}
+            \item Exploring the effectiveness of momentum strategies across diverse asset classes {\color{blue} (Asness et al., 2013)}
+            \item Constructing momentum factor to describe the cross-sectional variation of commodity returns {\color{blue} (Bakshi et al., 2019)}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Motivation}
+    \begin{block}{Recent Development in Momentum Strategies}
+        \begin{itemize}
+            \item The traditional momentum is based on prices (i.e. {\bf price momentum}).
+            \item {\bf Basis-momentum} factor proposed by {\color{blue} Boons and Prado (2019)} shows effective performance on predicting commodity premiums in
+            both the time series and cross-section.
+            \item {\bf Macro momentum} strategies developed by {\color{blue} Brooks (2017)} demonstrates consistent performance over a half-century.
+            \item {\bf Fundamental momentum} strategy proposed by {\color{blue} Novy-Marx (2015)} provides more stable and significant performance compared with price momentum.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Main Results}
+    \begin{block}{Goal of Our Project}
+        We aim to produce new fundamental momentum strategies based on the framework of {\color{blue} Novy-Marx (2015)}, test the effectiveness of the strategy and how they 
+        relate to the traditional price momentum strategies, so that we can provide a more comprehensive understanding of momentum strategies.
+    \end{block}
+    \begin{block}{Empirical Interests}
+        \begin{itemize}
+            \item Strategy performance in back-testing framework.
+            \item Spanning tests.
+            \item Relation with traditional price momentum strategies.
+            \item Conditional strategies.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Section 2: Data and Methodology
+\section{Data and Methodology}
+\begin{frame}
+    \frametitle{Data}
+    \begin{block}{Data Sources: WRDS}
+        \begin{itemize}
+            \item {\bf Stock Monthly Data:} CRSP database.
+            \item {\bf Company Quarterly Data:} Compustat database.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Data Process}
+        \begin{itemize}
+            \item {\bf Time Range:} from January 1975 to December 2023.
+            \item Use CUSIP to match the stock price with the fundamental data (24260 stocks in the panel).
+            \item Negative prices are dropped.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Methodology: Backtesting Framework}
+    \begin{block}{Quarterly-rebalanced Sorted Portfolio}
+        \begin{itemize}
+            \item At each March, June, September, and December, we compute the fundamental momentum of the selected characteristics.
+            \item If the momentum data is missing when we rebalance the portfolio, we use the most recent data up to two months.
+            \item Considering the Liquidity, we exclude the stocks with the lowest 30\% volume.
+            \item Sorting the stocks into deciles based on the fundamental momentum, we construct 10 sorted (equally-weighted) portfolios and hold for 3 months.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Methodology: Profit Margin Momentum}
+    \begin{block}{Why Profit Margin?}
+        \begin{itemize}
+            \item Profit margin (PM) is a financial metric that indicates how much of a company's revenue remains as profit after covering all expenses.
+            \begin{equation}
+                PM = \frac{Net~Income}{Revenue}
+            \end{equation}
+            \item A higher profit margin indicates a more profitable company that has better control over its costs compared to its competitors.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Methodology: Profit Margin Momentum}
+    \begin{block}{Factor Construction}
+        \begin{equation}
+            \text{PM Momentum}(t) = \frac{PM(t) - PM(t-3)}{SD(PM_{Last~3Yrs})}
+        \end{equation}
+        \begin{itemize}
+            \item To increase the stability, we standardize the profit margin momentum by the standard deviation of the profit margin over the last 3 years.
+            \item Moreover, we require that there are at least 6 observations in the last 3 years to calculate the standard deviation.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Section 3: Empirical Results
+\section{Empirical Results}
+\begin{frame}
+    \frametitle{Sorted Portfolio based on Profit Margin Momentum}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.85\textwidth]{Images/pm_sort.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Long-short Portfolio based on Profit Margin Momentum}
+    \begin{minipage}[c]{0.7\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/pm_ls.png}
+    \end{minipage}
+    \hspace{0.01\textwidth} 
+    \begin{minipage}[c]{0.2\textwidth}
+        \centering
+        \scalebox{0.4}{
+        \begin{tabular}{lll}
+            \toprule
+             & PM Momentum & Price Momentum \\
+            \midrule
+            Mean & 18.94\% & 11.76\% \\
+            Std & 12.43\% & 23.75\% \\
+            SR & 1.52 & 0.50 \\
+            MDD & 25.01\% & 89.55\% \\
+            \bottomrule
+        \end{tabular}
+        }
+    \end{minipage}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Spanning Test}
+    \begin{block}{Regression Settings}
+        \begin{itemize}
+            \item Regress profit margin momentum on FF3 factors and price momentum.
+            {
+            \setbeamertemplate{itemize items}[triangle]
+					\begin{itemize}
+						\item Examine whether the profit margin momentum can be subsumed.
+				    \end{itemize}
+            }
+        \end{itemize}
+    \end{block}
+    \begin{block}{Regression Results: $R^2$=2.60\%}
+        \centering
+        \begin{tabular}{l|ccccc}
+             & $\alpha$ & MKT & SMB & HML & MOM \\
+            \hline
+            Coefficient & 0.015 & -0.000 & 0.000 & 0.002 & 0.021 \\
+            t-statistic & (9.93) & (-0.73) & (0.88) & (3.59) & (0.96) \\
+        \end{tabular}
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Strategy Overlap: Definition}
+    \begin{block}{Overlap Ratio}
+        \begin{itemize}
+            \item At time $t$, for the $i$-th portfolio of profit margin momentum and price momentum, we calculate the overlap ratio simply by
+            \begin{equation*}
+                \text{Overlap Ratio} = \frac{\text{\# of Overlap Stocks}}{\text{\# of Stocks (Union)}}
+            \end{equation*}
+            \item For the long-short portfolios, we just take the average of the overlap ratio over the highest and lowest decile portfolios.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Strategy Overlap: Results}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.85\textwidth]{Images/pm_mom_overlap.png}
+    \end{figure}
+\end{frame}
+
+
+\end{document}
