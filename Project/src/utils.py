@@ -5,6 +5,7 @@ This script contains utility functionalities for computation.
 from datetime import datetime
 import numpy as np
 import pandas as pd
+import statsmodels.api as sm
 
 
 def forward_fill(
@@ -145,6 +146,23 @@ def get_formatted_feature(
     # Forward fill
     temp = forward_fill(get_time_merge(temp, df_ret), holding_period)
     return temp
+
+
+def get_formatted_spanning_test_results(
+        model: sm.regression.linear_model.RegressionResultsWrapper
+) -> str:
+    params = model.params          
+    tvalues = model.tvalues        
+    columns = params.index         
+    latex_table = "\\begin{tabular}{l" + "c" * len(columns) + "}\n"
+    latex_table += "\\toprule\n"
+    latex_table += " & " + " & ".join(columns) + " \\\\\n"
+    latex_table += "\\midrule\n"
+    latex_table += "Coefficient & " + " & ".join(f"{params[col]:.3f}" for col in columns) + " \\\\\n"
+    latex_table += "t-statistic & " + " & ".join(f"({tvalues[col]:.2f})" for col in columns) + " \\\\\n"
+    latex_table += "\\bottomrule\n"
+    latex_table += "\\end{tabular}"
+    return latex_table
 
 
 if __name__ == "__main__":

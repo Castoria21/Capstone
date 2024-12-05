@@ -20,6 +20,7 @@ def plot_solo_cum(
         plt.yscale('log')
     if title != None:
         plt.title(f"{title}")
+    plt.grid()
     plt.show()
 
 
@@ -46,4 +47,5 @@ def plot_group_cum(
     plt.ylabel("Cumulative Return")
     if log_scale:
         plt.yscale("log")
+    plt.grid()
     plt.show()
