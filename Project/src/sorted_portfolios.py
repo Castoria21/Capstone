@@ -45,7 +45,7 @@ def get_sorted_index(
 
 
 def get_sorted_portfolio(
-        df_ret: pd.DataFrame, df_idx_l: list[pd.DataFrame], cost: float=0.0005, 
+        df_ret: pd.DataFrame, df_idx_l: list[pd.DataFrame], cost: float = 0,
         weights: Union[list[pd.DataFrame], None]=None
 ) -> pd.DataFrame:
     """
@@ -63,7 +63,7 @@ def get_sorted_portfolio(
         weights = [create_ew_df(df) for df in df_idx_l]
     groups = len(df_idx_l)
     portfolio = pd.concat(
-        [(df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) for i in range(groups)], 
+        [(df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) - cost for i in range(groups)],
         axis=1
     )
     return portfolio
