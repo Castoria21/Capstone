@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{makecell}
+\usepackage{blkarray}
 \setbeamertemplate{navigation symbols}{}
 
 % Author, Title, Date
@@ -210,5 +211,70 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
     \end{figure}
 \end{frame}
 
+\begin{frame}{Conditional Strategy}
+    \begin{block}{What can be improved?}
+        We want to control the effect of price momentum while building long-short profit margin momentum portfolio. We build long-short double sorted portfolios conditioning on PM momentum and price momentum. We compared following two long-short portfolios:
+        \\ High PM \mid \text{High Price} - \text{Low PM} \mid \text{High Price}  
+        \\ High PM \mid \text{Low Price}  - \text{Low PM} \mid \text{Low Price} 
+    \end{block}
+\end{frame}
 
+\begin{frame}{Conditional Strategy: Results}
+    \begin{minipage}[c]{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/condition.png}
+    \end{minipage}
+    \hspace{0.01\textwidth} 
+    \begin{minipage}[c]{0.3\textwidth}
+        \centering
+        \scalebox{0.4}{
+        \begin{tabular}{lccc}
+            \toprule
+                & PM Momentum & High Price M. & Low Price M. \\
+            \midrule
+            Mean     & 18.36\%     & 18.70\%    & 19.00\% \\
+            Std      & 12.27\%     & 12.02\%    & 21.90\% \\
+            SR       & 1.50        & 1.56       & 0.87 \\
+            MDD & 25.01\% & 23.05\% & 53.34\% \\
+\bottomrule
+        \end{tabular}
+        }
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{Conditional Strategy: Results(Since 2010)}
+    \begin{minipage}[c]{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/condition_new.png}
+    \end{minipage}
+    \hspace{0.01\textwidth} 
+    \begin{minipage}[c]{0.3\textwidth}
+        \centering
+        \scalebox{0.4}{
+        \begin{tabular}{lccc}
+            \toprule
+                & PM Momentum & High Price M. & Low Price M. \\
+            \midrule
+            Mean     & 16.99\%     & 21.11\%    & 20.96\% \\
+            Std      & 14.94\%     & 12.34\%    & 29.34\% \\
+            SR       & 1.14        & 1.71       & 0.71 \\
+            MDD      & 25.01\%     & 16.26\%    & 53.34\% \\
+\bottomrule
+        \end{tabular}
+        }
+    \end{minipage}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    For double sorted portfolios, controlling the effect of price momentum provides more stable return.
+\end{frame}
+
+\begin{frame}{Reference}
+    
+\end{frame}
+
+\begin{frame}{Thank you}
+    
+\end{frame}
 \end{document}
