@@ -78,8 +78,8 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
     \frametitle{Data}
     \begin{block}{Data Sources: WRDS}
         \begin{itemize}
-            \item {\bf Stock Monthly Data:} CRSP database.
-            \item {\bf Company Quarterly Data:} Compustat database.
+            \item {\bf Monthly Stock Data:} CRSP database.
+            \item {\bf Quarterly Company Data:} Compustat database.
         \end{itemize}
     \end{block}
     \begin{block}{Data Process}
@@ -97,7 +97,7 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
         \begin{itemize}
             \item At each March, June, September, and December, we compute the fundamental momentum of the selected characteristics.
             \item If the momentum data is missing when we rebalance the portfolio, we use the most recent data up to two months.
-            \item Considering the Liquidity, we exclude the stocks with the lowest 30\% volume.
+            \item Considering the liquidity, we exclude the stocks with the lowest 30\% volume.
             \item Sorting the stocks into deciles based on the fundamental momentum, we construct 10 sorted (equally-weighted) portfolios and hold for 3 months.
         \end{itemize}
     \end{block}
@@ -211,11 +211,16 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Conditional Strategy}
+\begin{frame}
+    \frametitle{Conditional Strategy}
     \begin{block}{What can be improved?}
-        We want to control the effect of price momentum while building long-short profit margin momentum portfolio. We build long-short double sorted portfolios conditioning on PM momentum and price momentum. We compared following two long-short portfolios:
-        \\ High PM \mid \text{High Price} - \text{Low PM} \mid \text{High Price}  
-        \\ High PM \mid \text{Low Price}  - \text{Low PM} \mid \text{Low Price} 
+        We want to control the effect of price momentum while building long-short profit margin momentum portfolio. 
+        We build long-short double sorted portfolios conditioning on PM momentum and price momentum. 
+        We compared the following two long-short portfolios.
+        \begin{itemize}
+            \item High PM $\mid$ \text{High Price} $-$ \text{Low PM} $\mid$ \text{High Price}
+            \item High PM $\mid$ \text{Low Price}  $-$ \text{Low PM} $\mid$ \text{Low Price}
+        \end{itemize}
     \end{block}
 \end{frame}
 
@@ -267,14 +272,17 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
-    For double sorted portfolios, controlling the effect of price momentum provides more stable return.
+    \begin{itemize}
+        \item Profit margin momentum strategy provides a more stable and significant performance compared with price momentum.
+        \item The profit margin momentum strategy is not subsumed by the traditional Fama-French 3 factors and price momentum.
+        \item Though the overlap of the profit margin momentum and price momentum strategies is relatively low, the conditional strategy generates a more stable performance
+        by reducing the effect of price momentum.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Reference}
-    
+\begin{frame}
+    \centering
+    {\Huge Thank You!}
 \end{frame}
-
-\begin{frame}{Thank you}
     
-\end{frame}
 \end{document}

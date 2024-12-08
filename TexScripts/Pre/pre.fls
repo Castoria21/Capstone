@@ -298,6 +298,8 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/blkarray/blkarray.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/blkarray/blkarray.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./pre.aux
@@ -414,6 +416,20 @@ INPUT ./Images/pm_mom_overlap.png
 INPUT ./Images/pm_mom_overlap.png
 INPUT ./Images/pm_mom_overlap.png
 INPUT ./Images/pm_mom_overlap.png
+INPUT ./Images/condition.png
+INPUT ./Images/condition.png
+INPUT ./Images/condition.png
+INPUT ./Images/condition.png
+INPUT ./Images/condition.png
+INPUT ./Images/condition_new.png
+INPUT ./Images/condition_new.png
+INPUT ./Images/condition_new.png
+INPUT ./Images/condition_new.png
+INPUT ./Images/condition_new.png
+INPUT ./pre.toc
+INPUT ./pre.toc
+INPUT pre.toc
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 OUTPUT pre.nav
 OUTPUT pre.toc
 OUTPUT pre.snm
@@ -423,6 +439,7 @@ INPUT ./pre.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
