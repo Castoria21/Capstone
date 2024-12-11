@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.21)  10 DEC 2024 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.21)  10 DEC 2024 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -831,11 +831,11 @@ Overfull \hbox (19.65979pt too wide) in paragraph at lines 249--249
 [19
 
  <./Images/condition.png>]
-<Images/condition_new.png, id=1211, 711.8595pt x 529.7391pt>
+<Images/condition_new.png, id=1211, 711.8595pt x 492.8814pt>
 File: Images/condition_new.png Graphic file (type png)
 <use Images/condition_new.png>
 Package pdftex.def Info: Images/condition_new.png  used on input line 272.
-(pdftex.def)             Requested size: 184.3758pt x 137.2035pt.
+(pdftex.def)             Requested size: 184.3758pt x 127.65729pt.
 
 Overfull \hbox (24.66023pt too wide) in paragraph at lines 272--272
  [][] 
@@ -876,7 +876,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,451b,778s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on pre.pdf (23 pages, 614518 bytes).
+Output written on pre.pdf (23 pages, 619568 bytes).
 PDF statistics:
  1475 PDF objects out of 1728 (max. 8388607)
  782 compressed objects within 8 object streams
