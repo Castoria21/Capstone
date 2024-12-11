@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.21)  8 DEC 2024 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.21)  10 DEC 2024 21:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,28 +752,28 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [5
 
-]
-Overfull \vbox (2.40929pt too high) detected at line 73
- []
-
-[6
+] [6
 
 ] (./pre.toc) [7
 
 ] [8
 
-] [9
+]
+Overfull \vbox (3.29688pt too high) detected at line 105
+ []
+
+[9
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 117.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 118.
  (c:/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [10
@@ -783,25 +783,21 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] (./pre.toc) [12
 
 ]
-<Images/pm_sort.png, id=804, 725.5908pt x 543.4704pt>
+<Images/pm_sort.png, id=804, 725.5908pt x 544.9158pt>
 File: Images/pm_sort.png Graphic file (type png)
 <use Images/pm_sort.png>
-Package pdftex.def Info: Images/pm_sort.png  used on input line 140.
-(pdftex.def)             Requested size: 261.19826pt x 195.64088pt.
-
-Overfull \vbox (11.02527pt too high) detected at line 140
- []
-
-[13
+Package pdftex.def Info: Images/pm_sort.png  used on input line 141.
+(pdftex.def)             Requested size: 245.83282pt x 184.62036pt.
+ [13
 
  <./Images/pm_sort.png>]
-<Images/pm_ls.png, id=865, 725.5908pt x 543.4704pt>
+<Images/pm_ls.png, id=865, 725.5908pt x 544.9158pt>
 File: Images/pm_ls.png Graphic file (type png)
 <use Images/pm_ls.png>
-Package pdftex.def Info: Images/pm_ls.png  used on input line 164.
-(pdftex.def)             Requested size: 215.10196pt x 161.11017pt.
+Package pdftex.def Info: Images/pm_ls.png  used on input line 165.
+(pdftex.def)             Requested size: 184.3758pt x 138.46527pt.
 
-Overfull \hbox (26.87865pt too wide) in paragraph at lines 164--164
+Overfull \hbox (14.57419pt too wide) in paragraph at lines 165--165
  [][] 
  []
 
@@ -812,23 +808,23 @@ Overfull \hbox (26.87865pt too wide) in paragraph at lines 164--164
 ] [16
 
 ]
-<Images/pm_mom_overlap.png, id=1038, 729.927pt x 505.1673pt>
+<Images/pm_mom_overlap.png, id=1038, 729.927pt x 506.6127pt>
 File: Images/pm_mom_overlap.png Graphic file (type png)
 <use Images/pm_mom_overlap.png>
-Package pdftex.def Info: Images/pm_mom_overlap.png  used on input line 212.
-(pdftex.def)             Requested size: 261.19826pt x 180.77322pt.
+Package pdftex.def Info: Images/pm_mom_overlap.png  used on input line 213.
+(pdftex.def)             Requested size: 261.19826pt x 181.29045pt.
  [17
 
  <./Images/pm_mom_overlap.png>] [18
 
 ]
-<Images/condition.png, id=1152, 711.8595pt x 529.7391pt>
+<Images/condition.png, id=1152, 711.8595pt x 530.4618pt>
 File: Images/condition.png Graphic file (type png)
 <use Images/condition.png>
-Package pdftex.def Info: Images/condition.png  used on input line 248.
-(pdftex.def)             Requested size: 184.3758pt x 137.2035pt.
+Package pdftex.def Info: Images/condition.png  used on input line 249.
+(pdftex.def)             Requested size: 184.3758pt x 137.39069pt.
 
-Overfull \hbox (19.65979pt too wide) in paragraph at lines 248--248
+Overfull \hbox (19.65979pt too wide) in paragraph at lines 249--249
  [][] 
  []
 
@@ -838,10 +834,10 @@ Overfull \hbox (19.65979pt too wide) in paragraph at lines 248--248
 <Images/condition_new.png, id=1211, 711.8595pt x 529.7391pt>
 File: Images/condition_new.png Graphic file (type png)
 <use Images/condition_new.png>
-Package pdftex.def Info: Images/condition_new.png  used on input line 271.
+Package pdftex.def Info: Images/condition_new.png  used on input line 272.
 (pdftex.def)             Requested size: 184.3758pt x 137.2035pt.
 
-Overfull \hbox (19.65979pt too wide) in paragraph at lines 271--271
+Overfull \hbox (24.66023pt too wide) in paragraph at lines 272--272
  [][] 
  []
 
@@ -880,7 +876,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,451b,778s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on pre.pdf (23 pages, 585308 bytes).
+Output written on pre.pdf (23 pages, 614518 bytes).
 PDF statistics:
  1475 PDF objects out of 1728 (max. 8388607)
  782 compressed objects within 8 object streams

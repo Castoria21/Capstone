@@ -62,9 +62,10 @@ def get_sorted_portfolio(
     if weights == None:
         weights = [create_ew_df(df) for df in df_idx_l]
     groups = len(df_idx_l)
-    portfolio = pd.concat(
-        [(df_ret * (df_idx_l[i] * weights[i]).shift()).sum(axis=1) - cost for i in range(groups)],
-        axis=1
-    )
-    return portfolio
-    
+    portfolios = []
+    for i in range(groups):
+        characteristcs = (df_idx_l[i] * weights[i]).shift()
+        portfolio = (df_ret * characteristcs).sum(axis=1) - cost
+        portfolio = portfolio.where(characteristcs.notna().any(axis=1), np.nan)
+        portfolios.append(portfolio)
+    return pd.concat(portfolios, axis=1)

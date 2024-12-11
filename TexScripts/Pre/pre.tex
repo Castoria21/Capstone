@@ -59,8 +59,8 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
 \begin{frame}
     \frametitle{Main Results}
     \begin{block}{Goal of Our Project}
-        We aim to produce new fundamental momentum strategies based on the framework of {\color{blue} Novy-Marx (2015)}, test the effectiveness of the strategy and how they 
-        relate to the traditional price momentum strategies, so that we can provide a more comprehensive understanding of momentum strategies.
+        {\color{blue} Novy-Marx (2015)} looks at one form of fundamental momentum, earnings per share momentum, 
+        whereas we mainly focus on another form of fundamental momentum, profit margin momentum, so that we can provide a better understanding of the momentum profile.
     \end{block}
     \begin{block}{Empirical Interests}
         \begin{itemize}
@@ -99,6 +99,7 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
             \item If the momentum data is missing when we rebalance the portfolio, we use the most recent data up to two months.
             \item Considering the liquidity, we exclude the stocks with the lowest 30\% volume.
             \item Sorting the stocks into deciles based on the fundamental momentum, we construct 10 sorted (equally-weighted) portfolios and hold for 3 months.
+            \item Transaction costs: 20 basis for long-only portfolio and 40 basis for long-short portfolios when rebalancing. 
         \end{itemize}
     \end{block}
 \end{frame}
@@ -135,7 +136,7 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
     \frametitle{Sorted Portfolio based on Profit Margin Momentum}
     \begin{figure}
         \centering
-        \includegraphics[width=.85\textwidth]{Images/pm_sort.png}
+        \includegraphics[width=.80\textwidth]{Images/pm_sort.png}
     \end{figure}
 \end{frame}
 
@@ -153,10 +154,10 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
 \toprule
  & PM Momentum & Price Momentum & PM \\
 \midrule
-Mean & 17.34\% & 10.17\% & 13.74\% \\
-Std & 12.55\% & 23.67\% & 22.25\% \\
-SR & 1.38 & 0.43 & 0.62 \\
-MDD & 25.70\% & 90.95\% & 71.53\% \\
+Mean & 17.34\% & 9.58\% & 14.06\% \\
+Std & 12.55\% & 29.27\% & 22.48\% \\
+SR & 1.38 & 0.33 & 0.63 \\
+MDD & 25.70\% & 99.07\% & 71.53\% \\
 \bottomrule
 \end{tabular}
         }
@@ -177,13 +178,13 @@ MDD & 25.70\% & 90.95\% & 71.53\% \\
             }
         \end{itemize}
     \end{block}
-    \begin{block}{Regression Results: $R^2$=2.60\%}
+    \begin{block}{Regression Results: $R^2$=2.40\%}
         \centering
         \begin{tabular}{l|ccccc}
-             & $\alpha$ & MKT & SMB & HML & MOM \\
+             & $\alpha$ & $MKT-R_f$ & SMB & HML & MOM \\
             \hline
-            Coefficient & 0.015 & -0.000 & 0.000 & 0.002 & 0.021 \\
-            t-statistic & (9.93) & (-0.73) & (0.88) & (3.59) & (0.96) \\
+            Coefficient & 0.010 & -0.0181 & 0.0413 & 0.1761 & 0.0173 \\
+            t-statistic & (6.749) & (-0.508) & (0.772) & (3.441) & (0.950) \\
         \end{tabular}
     \end{block}
 \end{frame}
@@ -237,10 +238,10 @@ MDD & 25.70\% & 90.95\% & 71.53\% \\
 \toprule
       & PM Momentum & High Price M. & Low Price M. \\
 \midrule
-Mean  & 16.76\%     & 17.10\%    & 17.40\% \\
-Std   & 12.39\%     & 12.15\%    & 21.96\% \\
-SR    & 1.35        & 1.41       & 0.79 \\
-MDD   & 25.70\%     & 23.39\%    & 53.68\% \\
+Mean & 17.34\% & 17.69\% & 18.85\% \\
+Std & 12.55\% & 12.31\% & 20.46\% \\
+SR & 1.38 & 1.44 & 0.92 \\
+MDD & 25.70\% & 23.39\% & 45.05\% \\
 \bottomrule
 \end{tabular}
         }
@@ -258,12 +259,12 @@ MDD   & 25.70\%     & 23.39\%    & 53.68\% \\
         \scalebox{0.4}{
 \begin{tabular}{lccc}
 \toprule
-      & PM Momentum & High Price M. & Low Price M.\\
+& PM Benchmark & High Price PM. & Low Price PM. \\
 \midrule
-Mean  & 15.39\%     & 19.51\%    & 19.36\% \\
-Std   & 15.03\%     & 12.41\%    & 29.38\% \\
-SR    & 1.02        & 1.57       & 0.66 \\
-MDD   & 25.70\%     & 16.95\%    & 53.68\% \\
+Mean & 17.34\% & 17.69\% & 18.85\% \\
+Std & 12.55\% & 12.31\% & 20.46\% \\
+SR & 1.38 & 1.44 & 0.92 \\
+MDD & 25.70\% & 23.39\% & 45.05\% \\
 \bottomrule
 \end{tabular}
         }
