@@ -95,11 +95,10 @@ Advisor: Rob Reider,~Method Investment \& Advisory Ltd}
     \frametitle{Methodology: Backtesting Framework}
     \begin{block}{Quarterly-rebalanced Sorted Portfolio}
         \begin{itemize}
-            \item At each March, June, September, and December, we compute the fundamental momentum of the selected characteristics.
+            \item At each March, June, September, and December, we construct 10 sorted (equally-weighted) portfolios based on the selected fundamental momentum and hold for 3 months.
             \item If the momentum data is missing when we rebalance the portfolio, we use the most recent data up to two months.
             \item Considering the liquidity, we exclude the stocks with the lowest 30\% volume.
-            \item Sorting the stocks into deciles based on the fundamental momentum, we construct 10 sorted (equally-weighted) portfolios and hold for 3 months.
-            \item Transaction costs: 20 basis for long-only portfolio and 40 basis for long-short portfolios when rebalancing. 
+            \item Transaction costs: 20 basis for long-only portfolio and 40 basis for long-short portfolios when rebalancing. (a rough but relatively conservative estimate based on \textcolor{blue}{Frazzini, Israel, and Moskowitz (2015)})
         \end{itemize}
     \end{block}
 \end{frame}
